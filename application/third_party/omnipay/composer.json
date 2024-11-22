@@ -1,0 +1,29 @@
+{
+    "name": "smarthospital/qdocs",
+    "description": "Smart Hospital",
+    "license": "Smart Hospital Qdocs",
+    "authors": [
+        {
+            "name": "smarthospital",
+            "email": "support@qdocs.in"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "mpdf/mpdf": "dev-development",
+        "league/omnipay": "^3.2@dev",
+        "omnipay/paypal": "^3.0@dev",
+        "sonata-project/google-authenticator": "3.x-dev",
+        "google/apiclient": "^2.0@dev",
+        "chillerlan/php-qrcode": "v5.0.x-dev",
+        "stripe/stripe-php": "^15.0"
+    },
+    "config": {
+        "allow-plugins": {
+            "php-http/discovery": true
+        },
+        "platform": {
+            "php": "8.1.25"
+        }
+    }
+}

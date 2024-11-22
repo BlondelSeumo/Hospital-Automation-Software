@@ -1,0 +1,60 @@
+.info-wrap h4:after,
+.f1-list li a:after,
+.newstab,
+.list1 li:after {left:auto;right: 0px;}
+.icon-img {float: right;margin: 10px 5px 0 35px;}
+.cright {
+    float: right;
+    padding-right: 15px;
+    padding-left: 15px;
+    border-right: 1px solid var(--color-drak-gray-600);
+    border-left: 0px solid var(--color-drak-gray-600);/
+}
+.top-right {float: left;}
+.company-social {margin-right: 0;padding-right: 0;}
+.social li a {width: 30px;height: 30px;}
+.top-list li i {margin: 0px 0px 0px 8px;}
+.top-right li i {padding-right: 0;padding-left: 0.5em;}
+.newscontent marquee {margin-right: 100px;}
+.nav>li>a:hover, .nav>li>a:focus {background-color: transparent;}
+label.col-sm-2.control-label {text-align: left;}
+.view-all-btn {
+    background: var(--color-drak-gray-600) none repeat scroll 0 0;
+    border-radius: 3px 20px 3px 3px;
+    border: 0;
+    outline: 0;
+    color: #fff;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.75px;
+    padding: 15px 30px;
+    text-decoration: none;
+    text-transform: uppercase;
+    -webkit-box-shadow: 0px 15px 15px 0px rgba(0,0,0,0.1);
+    -moz-box-shadow: 0px 15px 15px 0px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 15px 15px 0px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+.copy-right p,
+.team-member p,
+.team-member h4 {text-align: center;}
+.scrollToTop{right: auto; left: 20px;}
+.navbar-toggle {
+    background-color: #212727;
+    border: 1px solid #212727;
+    margin-right: 0px;
+    margin-top: 0;
+}
+.control-round .carousel-control {color: var(--hovercolor);background: #f9f8f8;}
+.control-round .carousel-control.left:hover,
+.control-round .carousel-control.right:hover{color: var(--color-white);background: var(--hovercolor);}
+@media (min-width: 768px) {
+    .navbar-nav>li>a { padding-top: 10px; padding-bottom: 10px;}
+    .newscontent:before {right: auto;left: 20px;}
+    .sidebar {margin-right: 0rem; margin-left: -3rem; }
+}
+@media (min-width: 992px) {
+    .newscontent {margin-right: 0;margin-left: -60px;}
+    .top-list li:first-child { padding-left: 15px;}
+}

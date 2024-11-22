@@ -1,0 +1,26 @@
+
+/* Colors */
+:root {
+  --button-primary: #222533;
+  --button-primary-hover:#070707;
+}
+  
+.bellcircle, #frame .chatcontent .message-input .wrap button, #frame #sidepanel #bottom-bar button, .bedmodal .ukclose, .btn-primary {
+  background-color: var(--button-primary);
+}
+
+.btn-primary:hover, .btn-primary:active, .btn-primary.hover {
+background-color: var(--button-primary-hover) !important;
+}
+
+.nav-tabs-custom>.nav-tabs>li.active {
+  border-bottom-color:var(--button-primary-hover)
+}
+
+.nav-tabs-custom>.nav-tabs>li.active>a, .nav-tabs-custom>.nav-tabs>li.active:hover>a {
+  background-color: transparent;
+  color: var(--button-primary-hover) !important;
+}
+.blood-stacked li::before {
+  border-right: 20px solid var(--button-primary) !important;
+}

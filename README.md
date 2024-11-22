@@ -1,2 +1,2 @@
 # Hospital-Automation-Software
-Comprehensive and Modern Hospital Automation Software designed to meet the needs of hospitals and medical institutions of all sizes.
+Comprehensive and Modern Hospital Automation Software designed to meet the needs of hospitals and medical institutions of all sizes. It streamlines operations across every aspect of patient care and facility management, from OPD visits and surgeries to pathology and radiology tests. Featuring 25+ robust modules, the software includes dedicated user panels for 8 roles: Super Admin, Admin, Doctor, Accountant, Pathologist, Radiologist, Receptionist, and Patient, ensuring seamless collaboration and workflow efficiency across the organization.

@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "smart-hospital-510ee",
+  "private_key_id": "87305e1522a4aa12c5699d883e3c6f87ceeabbf2",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQCyJSESU7k3Zh++\n9xIed6hAzSIX73xeKj7yR+oPhihKTRWM4Or1OcAzQN0YPkF79qVxqMkDxjYYvBAE\n7OtI7NnIpF3y8j7QVcVBQEymT6mvaTnIPf62jJ6uRgJRXYZHB0l+tUswIttMUK9G\nV213z6YlCqdNzFm4mW16lGUnfQ1dJxB7hIsavKHmSMA1CcFkl35n8k6v55du/2Ro\nVtqGJqSrvIOA5BHlsy+1HxRKFUGM0Cv/p2qc1I8+6XSIkVJVHyY+BtwM5nHR8aAg\naSt/JZjmzDzmhYJGrA/nQEh0n9FKvECVAYFD8i6uTUS2VTeao+ortszDoZnfuA5X\nEDm2SmK/AgMBAAECggEADuKTVNiyDTL3TBmQ5gLRiDibtKxKFAQrpkrj/9AR5cNz\nHYZdm4fry1yMHM524kjFoi2cPjh9pKtyGzdAoaNIvz8cqoQbQ4UnKkCZJvxZDVMZ\nhOXJNq+hQqaO4wWRhrXRKkkzsx32fPXw70u21d//3fB58kI07PvE7g0gNqB4UWQi\nZgnp/CoDAOLA2yA5w+M5KnX8Fn6GFm++hFdlQ0hhYyAXcFb8iWgEyA+3HC8IP/43\n0/+FDW9nradkpVHAvM/8iCiq1PD88IrSZf5TASuIp1yPJz4KO3iiZhuy+dxS8W98\n5EP9Do4NFYoI/T13zICopf60SlQbzOdC3hsjas3eIQKBgQDo4VlPPp0h8U5Rb3kK\nkYYMAl33P4cr6nAgRd4HNwSGXGSCUV669mLv3O9aST6DViZczGmvHgmmsvoFqFii\nNQ3Hf1l5J9D+027eFlbwrpVdUbY5ZbDG+1yPPSwsBJmd81KDADdGB8fgHG/OBnmX\nvdNhlw+/nFUgV55r7WTK+bsZcwKBgQDD1K9Az8gGFf6m+GDNEmoI2e6K10pTuWT1\nx1CLwDCsQ65HGkbXYkqJhJM/hkFPvk7v0jhCpmotr7H9hZo0ZlhdzZS/8c7c801T\nfEsHybZ7ZneCTAq0fdpawzmlnv5PHzM3JC0XZkgOct1YbVvbPFlcsvn4uPONHn2A\ngJOc1Y6uhQKBgBfHivsQhbMFlN2z6EQv/+QSCc5JamANnE1vVPCfqZKetJSqAmZM\n6mVbxgUOHZgDn/8x0EjVZF7lP6p8OjC2AiYw1s4MRsb+h/+dgFsrOI1C3ryVqatn\n11e5A12rSpRaWD6QMxSvjrVPsgrzlk7sTz1T04PZTsfyqnaS0wv23CgJAoGASM4Q\nncrh9YlF1HOxIWzAKSxEqC+kPX5Gj62bP2mjbtf2ug6F2dt8FKZKTCqwq2H4XObN\n7dGK1hNk2/lIvER0g+NDcx0GKFT4IZqrFmkiw7vzoGh+7l1/yZCdJPr4VxglZVG4\nxeNL1LtVmWOG6/oCyxjrIFI6kfOM+zJSLtOiqTUCgYA5xW/jV7IdsA8k9adYh53T\nQYu+8FnKjwIxHIYVhuBacJJWYy1E5vlJbygzWgIrOw7ulJEYULN1weixkV/yGVxL\nF9zmGcScvPH2PmNGamnQo4+733YpDRnig8D7w4twGv1yrW8rWP2vmjzN8rEIG/fF\nKdhliUmO9zhkjoAhfnohjQ==\n-----END PRIVATE KEY-----\n",
+  "client_email": "firebase-adminsdk-2iw16@smart-hospital-510ee.iam.gserviceaccount.com",
+  "client_id": "108286377057534216538",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-2iw16%40smart-hospital-510ee.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
