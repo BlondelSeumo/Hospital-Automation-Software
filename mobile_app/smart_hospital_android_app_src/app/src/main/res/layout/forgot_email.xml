@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:src="@drawable/checked"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Email Sent !"
+        android:textSize="@dimen/primaryText"
+        android:textColor="@color/textHeading" />
+
+    <TextView
+        android:id="@+id/message"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textColor="@color/seperator"
+        android:text="-"
+        android:textSize="@dimen/primaryText"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:gravity="center"
+        android:padding="10dp"
+        android:textStyle="bold"/>
+
+</LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/addTask_dialog_ok"
+                android:layout_width="60dp"
+                android:layout_height="35dp"
+                android:text="OK"
+                android:gravity="center"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/green_border"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="@dimen/primaryText"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

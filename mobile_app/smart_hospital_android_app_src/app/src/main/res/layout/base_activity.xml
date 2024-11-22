@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BaseActivity"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/actionBarSecondary"
+        android:layout_width="match_parent"
+        android:layout_height="56dp">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="56dp">
+
+            <ImageView
+                android:id="@+id/actionBar_backBtn"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/ic_back"
+                android:layout_gravity="start"
+                android:padding="19dp"/>
+
+            <TextView
+                android:id="@+id/actionBar_title"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/actionBar_backBtn"
+                android:layout_marginStart="10dp"
+                android:scaleType="fitXY"
+                android:adjustViewBounds="true"
+                android:textSize="@dimen/heading"
+                android:textColor="@color/white"
+                android:gravity="center_vertical" />
+
+            <FrameLayout
+                android:id="@+id/dischargelist"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:clipToPadding="false"
+                android:focusable="true"
+                android:visibility="gone"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="15dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:padding="5dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:text="@string/previous_ipd"/>
+
+            </FrameLayout>
+            <FrameLayout
+                android:id="@+id/component_issue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:clipToPadding="false"
+                android:focusable="true"
+                android:visibility="gone"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="15dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:padding="5dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:text="@string/component_issue"/>
+
+            </FrameLayout>
+            <FrameLayout
+                android:id="@+id/delete_all"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:clipToPadding="false"
+                android:focusable="true"
+                android:visibility="gone"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="15dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:padding="5dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:text="@string/deleteall"/>
+
+            </FrameLayout>
+            <FrameLayout
+                android:id="@+id/add_appointment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:clipToPadding="false"
+                android:focusable="true"
+                android:visibility="gone"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="15dp">
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_gravity="center"
+                    android:tint="@color/white"
+                    android:src="@drawable/medical_appointment"
+                  />
+
+            </FrameLayout>
+
+            <LinearLayout
+                android:id="@+id/baseActivity_taskBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="15dp"
+                android:background="@color/transparent"
+                android:visibility="gone">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/ic_dashboard_pandingtask"
+                    android:padding="5dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/task"
+                    android:textSize="@dimen/primaryText"
+                    android:textColor="@color/white"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/img_background_main" >
+    </FrameLayout>
+
+</LinearLayout>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/adapter_report_card_exam_list"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+  ><LinearLayout
+    android:id="@+id/sym_layout"
+    android:layout_weight="1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/linear_layout"
+    android:padding="5dp"
+    android:weightSum="2"
+    android:orientation="horizontal">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:orientation="vertical">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/doctorimage"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/default_image"
+            android:scaleType="centerCrop" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/fieldname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:layout_marginLeft="10dp"
+        android:layout_gravity="center"
+        android:layout_marginRight="5dp"
+        android:textColor="@color/textHeading"
+        android:textSize="@dimen/secondaryText"
+        />
+
+</LinearLayout>
+</LinearLayout>

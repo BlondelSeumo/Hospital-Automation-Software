@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    android:id="@+id/adapter_patient_opd_viewContainer"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    style="@style/CustomCardView">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible">
+
+        <RelativeLayout
+            android:id="@+id/adapter_patient_opd_headLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/adapter_patient_opd_title"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:gravity="start|center"
+                android:minHeight="40dp"
+                android:padding="5dp"
+                android:text="@string/empty"
+                android:textColor="@color/textHeading"
+                android:textSize="@dimen/primaryText"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_alignParentEnd="true"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:background="@color/transparent"
+                android:layout_centerVertical="true">
+
+                <LinearLayout
+                    android:id="@+id/adapter_patient_opd_JoinBtn"
+                    android:layout_width="70dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentEnd="true"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:background="@color/transparent">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/ic_view" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/join"
+                        android:textColor="@color/hyperLink"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/adapter_patient_opd_subjectLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/adapter_patient_opd_headLayout"
+            android:layout_marginTop="0dp"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/adapter_patient_opd_prescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="9dp"
+                android:layout_marginBottom="5dp"
+                android:background="@color/green"
+                android:visibility="gone"
+                android:paddingStart="5dp"
+                android:paddingEnd="5dp"
+                android:text="@string/prescription"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2"
+            android:orientation="vertical"
+            android:padding="5dp"
+            android:layout_below="@+id/adapter_patient_opd_subjectLayout">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="2"
+                android:layout_marginStart="5dp"
+                android:orientation="horizontal"
+                android:layout_weight="1">
+
+                <LinearLayout
+                        android:id="@+id/adapter_patient_opd_dateLayout"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_weight="1"
+                        android:weightSum="2">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/date"
+                        android:textStyle="bold"
+                        android:layout_marginRight="5dp"
+                        android:textColor="@color/textHeading"
+                        android:textSize="@dimen/secondaryText"/>
+
+                    <TextView
+                        android:id="@+id/adapter_patient_opd_date"
+                        android:layout_width="wrap_content"
+                        android:text="@string/empty"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/textHeading"
+                        android:textSize="@dimen/secondaryText" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:gravity="end"
+                    android:layout_marginEnd="5dp"
+                    android:orientation="horizontal">
+
+                 <!--   <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/status"
+                        android:layout_marginRight="5dp"
+                        android:textColor="@color/textHeading"
+                        android:textSize="@dimen/secondaryText"
+                        android:textStyle="bold" />-->
+
+                    <TextView
+                        android:id="@+id/adapter_patient_opd_status"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:padding="3dp"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/secondaryText" />
+
+                </LinearLayout>
+
+             <!--   <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:layout_marginStart="5dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="5dp"
+                        android:text="@string/createdby"
+                        android:layout_marginRight="5dp"
+                        android:textColor="@color/textHeading"
+                        android:textSize="@dimen/secondaryText"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/adapter_patient_opd_creadtedby"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/textHeading"
+                        android:text="-"
+                        android:textSize="@dimen/secondaryText" />
+                </LinearLayout>
+-->
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+               android:padding="5dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_weight="1"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/createdfor"
+                        android:textStyle="bold"
+                        android:layout_marginRight="5dp"
+                        android:textColor="@color/textHeading"
+                        android:textSize="@dimen/secondaryText"/>
+
+                    <TextView
+                        android:id="@+id/adapter_patient_opd_createdfor"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/empty"
+                        android:textColor="@color/textHeading"
+                        android:textSize="@dimen/secondaryText" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="5dp"
+                        android:text="@string/createdby"
+                        android:layout_marginRight="5dp"
+                        android:textColor="@color/textHeading"
+                        android:textSize="@dimen/secondaryText"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/adapter_patient_opd_creadtedby"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/textHeading"
+                        android:text="@string/empty"
+                        android:textSize="@dimen/secondaryText" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

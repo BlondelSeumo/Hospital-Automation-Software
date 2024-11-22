@@ -1,0 +1,500 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="8dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="50dp">
+
+        <TextView
+            android:id="@+id/patientappoinment_bottomSheet__header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="50dp"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:textSize="@dimen/primaryText"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:padding="10dp"
+            android:text="@string/Pharmacy" />
+
+        <ImageView
+            android:id="@+id/patientappoinment_bottomSheet__crossBtn"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:padding="10dp"
+            android:src="@drawable/ic_close_white"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="10dp"
+            android:layout_centerVertical="true" />
+
+    </RelativeLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <TextView
+            android:id="@+id/patientappoinment_bottomSheet_appoinmentno"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_weight="1"
+            android:textColor="@color/textHeading"
+            android:textSize="@dimen/secondaryText"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/patientappoinment_bottomSheet_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/secondaryText"
+            android:textStyle="bold"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:textColor="@color/textHeading"
+            android:padding="10dp" />
+
+</LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.4dp"
+        android:background="@color/seperatorline" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/adapter_patient_appoinment_subjectLayout"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginEnd="10dp"
+        android:baselineAligned="false"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="5dp"
+                    android:text="@string/doctor"
+                    android:textColor="@color/textHeading"
+                    android:textSize="@dimen/secondaryText"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/appoinment_reference_doctor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="-"
+                    android:textColor="@color/textHeading"
+                    android:textSize="@dimen/secondaryText" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.4dp"
+        android:background="@color/seperatorline" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.4dp"
+        android:background="@color/seperatorline" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:padding="5dp"
+        android:orientation="vertical"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2"
+            android:orientation="vertical"
+            android:layout_marginEnd="5dp">
+
+            <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/appoint_serial"
+                android:textStyle="bold"
+                android:layout_marginRight="5dp"
+                android:textColor="@color/textHeading"
+                android:textSize="@dimen/secondaryText"/>
+
+            <TextView
+                android:id="@+id/appoinment_serialno"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/textHeading"
+                android:textSize="@dimen/secondaryText" />
+
+        </LinearLayout>
+
+            <LinearLayout
+            android:id="@+id/adapter_patient_appoinment_maountLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="@string/shift"
+                android:textStyle="bold"
+                android:layout_marginRight="5dp"
+                android:textColor="@color/textHeading"
+                android:textSize="@dimen/secondaryText"/>
+
+            <TextView
+                android:id="@+id/appoinment_shift"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/textHeading"
+                android:textSize="@dimen/secondaryText" />
+
+        </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:text="@string/slot"
+                    android:textStyle="bold"
+                    android:textColor="@color/textHeading"
+                    android:textSize="@dimen/secondaryText"/>
+
+                <TextView
+                    android:id="@+id/appoinment_slot"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/textHeading"
+                    android:textSize="@dimen/secondaryText" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:text="@string/live_consultant"
+                    android:textStyle="bold"
+                    android:textColor="@color/textHeading"
+                    android:textSize="@dimen/secondaryText"/>
+
+                <TextView
+                    android:id="@+id/appoinment_live_consultant"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/textHeading"
+                    android:textSize="@dimen/secondaryText" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="5dp"
+                    android:text="@string/netamount"
+                    android:textColor="@color/textHeading"
+                    android:textSize="@dimen/secondaryText"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/appoinment_netamount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/textHeading"
+                    android:textSize="@dimen/secondaryText" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="5dp"
+                    android:text="@string/discount"
+                    android:textColor="@color/textHeading"
+                    android:textSize="@dimen/secondaryText"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/appoinment_discount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/textHeading"
+                    android:textSize="@dimen/secondaryText" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="5dp"
+                    android:text="@string/paidamount"
+                    android:textColor="@color/textHeading"
+                    android:textSize="@dimen/secondaryText"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/appoinment_amount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/textHeading"
+                    android:textSize="@dimen/secondaryText" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="5dp"
+                    android:text="@string/paymentmode"
+                    android:textColor="@color/textHeading"
+                    android:textSize="@dimen/secondaryText"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/appoinment_paymentmode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/textHeading"
+                    android:textSize="@dimen/secondaryText" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/chequeno_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/ChequeNo"
+                    android:layout_marginRight="5dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/textHeading"
+                    android:textSize="@dimen/secondaryText"/>
+
+                <TextView
+                    android:id="@+id/appoinment_ChequeNo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/textHeading"
+                    android:textSize="@dimen/secondaryText" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/chequedate_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/ChequeDate"
+                    android:layout_marginRight="5dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/textHeading"
+                    android:textSize="@dimen/secondaryText"/>
+
+                <TextView
+                    android:id="@+id/appoinment_ChequeDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/textHeading"
+                    android:textSize="@dimen/secondaryText" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/attachment_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/document"
+                    android:layout_marginRight="5dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/textHeading"
+                    android:textSize="@dimen/secondaryText"/>
+
+                <LinearLayout
+                    android:id="@+id/downloadBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:src="@drawable/ic_nav_download"
+                        android:layout_margin="5dp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="Source"
+                    android:layout_marginRight="5dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/textHeading"
+                    android:textSize="@dimen/secondaryText"/>
+
+                <TextView
+                    android:id="@+id/appoinment_Source"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/textHeading"
+                    android:textSize="@dimen/secondaryText" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="Transaction ID"
+                    android:layout_marginRight="5dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/textHeading"
+                    android:textSize="@dimen/secondaryText"/>
+                <TextView
+                    android:id="@+id/appoinment_TransactionID"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/textHeading"
+                    android:textSize="@dimen/secondaryText" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/notelayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:text="Payment Note"
+                    android:textColor="@color/textHeading"
+                    android:textSize="@dimen/secondaryText"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/appoinment_note"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="@color/textHeading"
+                    android:textSize="@dimen/secondaryText" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        </LinearLayout>
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    </LinearLayout>

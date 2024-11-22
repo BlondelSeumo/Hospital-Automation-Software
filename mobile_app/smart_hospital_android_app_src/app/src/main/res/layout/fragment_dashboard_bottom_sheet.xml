@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="8dp"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="50dp"
+        >
+
+        <TextView
+            android:id="@+id/dashboard_bottomSheet_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="50dp"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:textSize="@dimen/primaryText"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:padding="10dp"
+            />
+
+        <ImageView
+            android:id="@+id/dashboard_bottomSheet_crossBtn"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:padding="12dp"
+            android:src="@drawable/ic_close_white"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="10dp"
+            android:layout_centerVertical="true"
+            />
+
+    </RelativeLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginStart="5dp"
+        android:weightSum="2">
+
+        <ImageView
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/orange_circle"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="10dp"
+            android:textSize="@dimen/primaryText"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/textHeading"
+            android:textStyle="bold"
+            android:text="Appointments"
+            >
+
+
+        </TextView>
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:gravity="end">
+            <LinearLayout
+                android:id="@+id/adapter_patient_addappointBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:background="@color/transparent">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/ic_view" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/addAppoinments"
+                    android:textColor="@color/hyperLink"/>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/dashboard_bottomSheet_appoinments_listview"
+        android:layout_width="match_parent"
+        android:layout_marginStart="5dp"
+        android:layout_height="wrap_content">
+    </androidx.recyclerview.widget.RecyclerView>
+            <TextView
+                android:id="@+id/appointment_nodata"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="No Data Found !"
+                android:textStyle="bold"
+                android:visibility="gone"
+                android:padding="10dp"
+               android:gravity="center"
+                android:textColor="@color/textHeading"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="15dp"
+        android:weightSum="2">
+        <ImageView
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/green_circle"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="10dp"
+            android:textSize="@dimen/primaryText"
+            android:textColor="@color/textHeading"
+            android:textStyle="bold"
+            android:text="Task And Events"
+            >
+
+        </TextView>
+
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/dashboard_bottomSheet_task_listview"
+        android:layout_width="match_parent"
+        android:layout_marginStart="5dp"
+        android:layout_height="wrap_content">
+
+    </androidx.recyclerview.widget.RecyclerView>
+            <TextView
+                android:id="@+id/event_nodata"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="No Data Found !"
+                android:textStyle="bold"
+                android:padding="10dp"
+                android:gravity="center"
+                android:visibility="gone"
+                android:textColor="@color/textHeading"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="15dp"
+                android:weightSum="2">
+                <ImageView
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/maroon_circle"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginStart="10dp"
+                    android:textSize="@dimen/primaryText"
+                    android:textColor="@color/textHeading"
+                    android:textStyle="bold"
+                    android:text="Holidays and Vacations"
+                    >
+
+                </TextView>
+
+            </LinearLayout>
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/dashboard_bottomSheet_holiday_listview"
+                android:layout_width="match_parent"
+                android:layout_marginStart="5dp"
+                android:layout_height="wrap_content">
+
+            </androidx.recyclerview.widget.RecyclerView>
+            <TextView
+                android:id="@+id/holiday_nodata"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="No Data Found !"
+                android:textStyle="bold"
+                android:padding="10dp"
+                android:gravity="center"
+                android:visibility="gone"
+                android:textColor="@color/textHeading"/>
+</LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

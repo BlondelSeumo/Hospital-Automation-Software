@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/adapter_task_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/adapter_task_taskIcon"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_alignParentStart="true"
+                android:src="@drawable/ic_dashboard_pandingtask"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="10dp" />
+
+            <TextView
+                android:id="@+id/adapter_task_TaskNameTV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/primaryText"
+                android:textStyle="bold"
+                android:textColor="@color/textHeading"
+                android:gravity="start|center"
+                android:layout_toEndOf="@id/adapter_task_taskIcon"
+                android:layout_toStartOf="@+id/adapter_task_checkbox"
+                android:layout_marginStart="10dp"
+                android:paddingStart="5dp"
+                android:paddingEnd="5dp"
+                android:paddingTop="5dp" />
+
+            <TextView
+                android:id="@+id/adapter_task_TaskDateTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/adapter_task_taskIcon"
+                android:layout_below="@+id/adapter_task_TaskNameTV"
+                android:layout_toStartOf="@+id/adapter_task_checkbox"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:paddingStart="5dp"
+                android:paddingEnd="5dp"
+                android:paddingBottom="5dp"
+                android:textSize="@dimen/secondaryText"
+                android:textStyle="bold"
+                android:textColor="@color/textHeading"
+                android:text="2019-11-11" />
+
+            <androidx.appcompat.widget.AppCompatCheckBox
+                android:id="@+id/adapter_task_checkbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp" />
+
+        </RelativeLayout>
+
+    <TextView
+        android:id="@+id/adapter_task_taskDesc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:visibility="gone"
+        android:textStyle="bold"
+        android:textColor="@color/textHeading"
+        android:textSize="@dimen/secondaryText" />
+
+    </LinearLayout>
+

@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingBottom="8dp">
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="50dp">
+
+        <TextView
+            android:id="@+id/patientpres_bottomSheet__header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="50dp"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:textSize="@dimen/primaryText"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:padding="10dp"
+            android:text="@string/prescription"
+            />
+
+        <ImageView
+            android:id="@+id/patientpres_bottomSheet__crossBtn"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:padding="10dp"
+            android:src="@drawable/ic_close_white"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="10dp"
+            android:layout_centerVertical="true"
+            />
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <TextView
+            android:id="@+id/patientodp_bottomSheet_prescno"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="5dp"
+            android:textColor="@color/textHeading"
+            android:textSize="@dimen/secondaryText"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/patientopd_bottomSheet_prescdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/secondaryText"
+            android:padding="5dp"
+            android:textStyle="bold"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:textColor="@color/textHeading"
+
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        android:padding="5dp"
+        android:weightSum="2">
+
+        <TextView
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/textHeading"
+            android:text="@string/opdid"
+            android:textSize="@dimen/secondaryText"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/patient_opdid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/textHeading"
+            android:paddingStart="5dp"
+            android:text="-"
+            android:textSize="@dimen/secondaryText" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        android:gravity="end"
+        android:layout_weight="1"
+        android:weightSum="2">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/textHeading"
+            android:paddingStart="5dp"
+            android:text="@string/opdcheckupid"
+            android:textSize="@dimen/secondaryText"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/patient_opdcheckupid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/textHeading"
+            android:paddingEnd="5dp"
+            android:paddingStart="5dp"
+            android:textSize="@dimen/secondaryText" />
+
+    </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/findings_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        android:weightSum="2"
+        >
+
+        <TextView
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/textHeading"
+            android:text="@string/findings"
+            android:textSize="@dimen/secondaryText"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/patient_bottomSheet_findings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/textHeading"
+            android:paddingStart="5dp"
+            android:text="-"
+            android:textSize="@dimen/secondaryText"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/symptoms_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        android:weightSum="2"
+        >
+
+        <TextView
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/textHeading"
+            android:text="@string/symptoms"
+            android:textSize="@dimen/secondaryText"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/patient_bottomSheet_symptoms"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/textHeading"
+            android:paddingStart="5dp"
+            android:text="-"
+            android:textSize="@dimen/secondaryText"
+            />
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/document"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="5dp"
+            android:weightSum="2"
+            >
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/textHeading"
+                android:text="@string/document"
+                android:textSize="@dimen/secondaryText"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/patient_attachment"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:paddingStart="5dp"
+                android:src="@drawable/ic_nav_download"
+                android:textSize="@dimen/secondaryText" />
+
+        </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        >
+        <WebView
+            android:id="@+id/patient_bottomSheet_header"
+            android:layout_width="match_parent"
+            android:layout_margin="5dp"
+            android:layout_height="wrap_content"/>
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/adapter_patient_prescription_detailView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="4">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:padding="5dp"
+                android:text="@string/medicine"
+                android:textColor="@color/textHeading"
+                android:textSize="@dimen/secondaryText"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="@string/dosage"
+                android:textColor="@color/textHeading"
+                android:textSize="@dimen/secondaryText"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="@string/dose_interval"
+                android:textColor="@color/textHeading"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:padding="5dp"
+                android:text="@string/dose_duration"
+                android:textColor="@color/textHeading"
+                android:textSize="@dimen/secondaryText"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.4dp"
+            android:background="@color/seperatorline" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/pathologytest_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        >
+        <TextView
+            android:id="@+id/patho_TV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pathology Test"
+            android:textStyle="bold"
+            android:paddingLeft="10dp"
+            android:textColor="@color/textHeading"
+            android:textSize="@dimen/secondaryText"
+            />
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/patho_recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/radiologytest_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        >
+        <TextView
+            android:id="@+id/radio_TV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Radiology Test"
+            android:textStyle="bold"
+            android:paddingLeft="10dp"
+            android:textColor="@color/textHeading"
+            android:textSize="@dimen/secondaryText"
+            />
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/radio_recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        >
+        <WebView
+            android:id="@+id/patient_bottomSheet_footer"
+            android:layout_width="match_parent"
+            android:layout_margin="5dp"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>
+

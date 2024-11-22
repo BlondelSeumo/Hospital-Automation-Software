@@ -1,0 +1,522 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    android:id="@+id/adapter_patient_ambulance_viewContainer"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    style="@style/CustomCardView">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible">
+
+        <RelativeLayout
+            android:id="@+id/adapter_patient_ambulance_headLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/adapter_patient_ambulance_billno"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="start|center"
+                android:minHeight="40dp"
+                android:padding="5dp"
+                android:text="@string/bill"
+                android:textColor="@color/textHeading"
+                android:textSize="@dimen/primaryText"
+                android:textStyle="bold" />
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_alignParentEnd="true"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:background="@color/transparent"
+                android:layout_centerVertical="true">
+
+                <ImageView
+                    android:id="@+id/adapter_patient_ambulance_viewpaymentBtn"
+                    android:layout_width="17dp"
+                    android:layout_height="18dp"
+                    android:layout_marginEnd="10dp"
+                    android:paddingTop="2dp"
+                    android:paddingBottom="2dp"
+                    android:src="@drawable/payment" />
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="5dp"
+                    android:gravity="end">
+                    <TextView
+                        android:id="@+id/adapter_patient_ambulance_paymentBtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="10dp"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:text="@string/pay"
+                        android:textColor="@color/white"
+                        android:background="@drawable/green_border"
+                        android:paddingBottom="2dp"
+                        android:textStyle="bold"
+                        android:src="@drawable/payment" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+        <LinearLayout
+            android:id="@+id/adapter_patient_ambulance_caseLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:padding="5dp"
+            android:weightSum="2"
+            android:orientation="horizontal"
+            android:layout_below="@+id/adapter_patient_ambulance_headLayout">
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/caseid"
+                    android:textColor="@color/textHeading"
+                    android:textSize="@dimen/secondaryText"
+                    android:textStyle="bold"
+                    android:layout_marginEnd="5dp" />
+
+                <TextView
+                    android:id="@+id/caseid"
+                    android:layout_width="138dp"
+                    android:layout_height="match_parent"
+                    android:text="@string/empty"
+                    android:textColor="@color/textHeading"
+                    android:textSize="@dimen/secondaryText" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/amount"
+                    android:textColor="@color/textHeading"
+                    android:textSize="@dimen/secondaryText"
+                    android:textStyle="bold"
+                    android:layout_marginEnd="5dp" />
+
+                <TextView
+                    android:id="@+id/amount"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:text="@string/empty"
+                    android:textColor="@color/textHeading"
+                    android:textSize="@dimen/secondaryText" />
+
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/adapter_patient_ambulance_subjectLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:padding="5dp"
+            android:weightSum="2"
+            android:orientation="horizontal"
+            android:layout_below="@+id/adapter_patient_ambulance_caseLayout">
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/vehicleno"
+                    android:textColor="@color/textHeading"
+                    android:textSize="@dimen/secondaryText"
+                    android:textStyle="bold"
+                    android:layout_marginEnd="5dp" />
+
+                <TextView
+                    android:id="@+id/vehicleno"
+                    android:layout_width="138dp"
+                    android:layout_height="match_parent"
+                    android:text="@string/empty"
+                    android:textColor="@color/textHeading"
+                    android:textSize="@dimen/secondaryText" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/discount"
+                    android:textColor="@color/textHeading"
+                    android:textSize="@dimen/secondaryText"
+                    android:textStyle="bold"
+                    android:layout_marginEnd="5dp" />
+
+                <TextView
+                    android:id="@+id/discount"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:text="@string/empty"
+                    android:textColor="@color/textHeading"
+                    android:textSize="@dimen/secondaryText" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:baselineAligned="false"
+            android:layout_below="@+id/adapter_patient_ambulance_subjectLayout">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="2"
+                android:orientation="horizontal"
+                android:layout_marginEnd="5dp">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_weight="1"
+                        android:padding="5dp"
+                        android:weightSum="2">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/vehiclemodel"
+                        android:textStyle="bold"
+                        android:layout_marginEnd="5dp"
+                        android:textColor="@color/textHeading"
+                        android:textSize="@dimen/secondaryText"/>
+                    <TextView
+                        android:id="@+id/vehiclemodel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/empty"
+                        android:textColor="@color/textHeading"
+                        android:textSize="@dimen/secondaryText" />
+                    </LinearLayout>
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Tax"
+                        android:textColor="@color/textHeading"
+                        android:textSize="@dimen/secondaryText"
+                        android:textStyle="bold"
+                        android:layout_marginEnd="5dp" />
+
+                    <TextView
+                        android:id="@+id/tax"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:text="@string/empty"
+                        android:textColor="@color/textHeading"
+                        android:textSize="@dimen/secondaryText" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/gegeges"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:weightSum="2"
+                    android:layout_marginBottom="5dp"
+                    android:layout_below="@+id/adapter_patient_ot_idLayout">
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="2"
+                        android:layout_weight="1"
+                        android:padding="5dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/drivername"
+                            android:textStyle="bold"
+                            android:layout_marginEnd="5dp"
+                            android:textColor="@color/textHeading"
+                            android:textSize="@dimen/secondaryText"/>
+                        <TextView
+                            android:id="@+id/adapter_driver_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/empty"
+                            android:textColor="@color/textHeading"
+                            android:textSize="@dimen/secondaryText" />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/netamount"
+                            android:textColor="@color/textHeading"
+                            android:textSize="@dimen/secondaryText"
+                            android:textStyle="bold"
+                            android:layout_marginEnd="5dp" />
+
+                        <TextView
+                            android:id="@+id/adapter_patient_ambulance_charge"
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent"
+                            android:text="@string/empty"
+                            android:textColor="@color/textHeading"
+                            android:textSize="@dimen/secondaryText" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:weightSum="2"
+                android:layout_below="@+id/gegeges">
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:weightSum="2"
+                    android:padding="5dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/drivercontact"
+                        android:textColor="@color/textHeading"
+                        android:textSize="@dimen/secondaryText"
+                        android:textStyle="bold"
+                        android:layout_marginEnd="5dp" />
+                    <TextView
+                        android:id="@+id/adapter_contact"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:text="@string/empty"
+                        android:textColor="@color/textHeading"
+                        android:textSize="@dimen/secondaryText" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:weightSum="2"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/paidamount"
+                        android:textColor="@color/textHeading"
+                        android:textSize="@dimen/secondaryText"
+                        android:textStyle="bold"
+                        android:layout_marginEnd="5dp" />
+                    <TextView
+                        android:id="@+id/paidamount"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:text="@string/empty"
+                        android:textColor="@color/textHeading"
+                        android:textSize="@dimen/secondaryText" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:weightSum="2"
+                android:layout_below="@+id/gegeges">
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:weightSum="2"
+                    android:padding="5dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/chargename"
+                        android:textColor="@color/textHeading"
+                        android:textSize="@dimen/secondaryText"
+                        android:textStyle="bold"
+                        android:layout_marginEnd="5dp" />
+                    <TextView
+                        android:id="@+id/adapter_chargename"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:text="@string/empty"
+                        android:textColor="@color/textHeading"
+                        android:textSize="@dimen/secondaryText" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:weightSum="2"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="5dp"
+                        android:text="@string/balance_amount"
+                        android:textColor="@color/textHeading"
+                        android:textSize="@dimen/secondaryText"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/balanceamount"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:text="@string/empty"
+                        android:textColor="@color/textHeading"
+                        android:textSize="@dimen/secondaryText" />
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:weightSum="2"
+                android:layout_below="@+id/gegeges">
+
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:weightSum="2"
+                    android:padding="5dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/ChargeCategory"
+                        android:textColor="@color/textHeading"
+                        android:textSize="@dimen/secondaryText"
+                        android:textStyle="bold"
+                        android:layout_marginEnd="5dp" />
+                    <TextView
+                        android:id="@+id/ChargeCategory"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:text="@string/empty"
+                        android:textColor="@color/textHeading"
+                        android:textSize="@dimen/secondaryText" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/gegeges"
+                android:weightSum="2"
+                android:layout_marginBottom="5dp"
+                android:orientation="horizontal">
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:weightSum="2"
+                android:layout_below="@+id/gegeges">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="2"
+                    android:padding="5dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/note"
+                        android:textColor="@color/textHeading"
+                        android:textSize="@dimen/secondaryText"
+                        android:textStyle="bold"
+                        android:layout_marginEnd="5dp" />
+                    <TextView
+                        android:id="@+id/adapter_note"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:text="@string/empty"
+                        android:textColor="@color/textHeading"
+                        android:textSize="@dimen/secondaryText" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
+

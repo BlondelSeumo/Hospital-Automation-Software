@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/CustomCardView"
+
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible">
+    <RelativeLayout
+        android:id="@+id/adapter_patient_ipd_headLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/adapter_patient_ipd_ipdno"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start|center"
+            android:minHeight="40dp"
+            android:paddingStart="10dp"
+            android:text="@string/empty"
+            android:textColor="@color/textHeading"
+            android:textSize="@dimen/primaryText"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignParentEnd="true"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:background="@color/transparent"
+            android:layout_centerVertical="true">
+
+            <ImageView
+                android:id="@+id/adapter_ipd_viewPresc"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/prescription"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                android:layout_marginEnd="10dp" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/linear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/adapter_patient_ipd_headLayout"
+            android:baselineAligned="false"
+            android:orientation="horizontal"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:weightSum="2">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:orientation="horizontal"
+                android:padding="5dp"
+                android:weightSum="2">
+
+                <ImageView
+                    android:id="@+id/adapter_patient_ipd_ipdicon"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_margin="5dp"
+                    android:src="@drawable/prescription" />
+
+                <LinearLayout
+                    android:id="@+id/adapter_patient_ipd_ipd"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_toEndOf="@+id/adapter_patient_ipd_ipdicon"
+                    android:orientation="vertical"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/prescriptionno"
+                        android:textColor="@color/textHeading"
+                        android:textSize="@dimen/secondaryText"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/adapter_patient_ipd_presno"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/empty"
+                        android:textColor="@color/textHeading"
+                        android:textSize="@dimen/secondaryText" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/adapter_patient_prescription_dateView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:orientation="horizontal"
+                android:padding="5dp"
+                android:weightSum="2">
+
+                <ImageView
+                    android:id="@+id/adapter_patient_calenderIcon"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_margin="5dp"
+                    android:src="@drawable/ic_calender" />
+
+                <LinearLayout
+                    android:id="@+id/adapter_patient_ipd_dateLay"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@+id/adapter_patient_calenderIcon"
+                    android:orientation="vertical"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:text="@string/date"
+                        android:textColor="@color/textHeading"
+                        android:textSize="@dimen/secondaryText"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/adapter_patient_ipd_date"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:text="@string/empty"
+                        android:textColor="@color/textHeading"
+                        android:textSize="@dimen/secondaryText" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linear">
+
+
+            <LinearLayout
+                android:id="@+id/adapter_patient_ipd_dateLay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dp"
+                android:layout_toEndOf="@+id/adapter_patient_calenderIcon"
+                android:orientation="vertical"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/findings"
+                    android:paddingLeft="20dp"
+                    android:textColor="@color/textHeading"
+                    android:textSize="@dimen/secondaryText"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/adapter_patient_ipd_finding"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="20dp"
+                    android:text="@string/empty"
+                    android:textColor="@color/textHeading"
+                    android:textSize="@dimen/secondaryText" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
+

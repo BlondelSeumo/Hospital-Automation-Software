@@ -1,0 +1,1004 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:id="@+id/addappoint_dialog_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <ImageView
+            android:id="@+id/addTask_dialog_calenderIcon"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentStart="true"
+            android:src="@drawable/ic_labinvestigation"
+            android:tint="@color/white"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            />
+
+        <TextView
+            android:id="@+id/headertext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/addTask_dialog_calenderIcon"
+            android:gravity="start|center"
+            android:minHeight="40dp"
+            android:padding="5dp"
+            android:text="@string/antenatalfindings"
+            android:textColor="@color/white"
+            android:textSize="@dimen/primaryText"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/dialog_crossIcon"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/ic_close"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:padding="5dp"
+            android:tint="@color/white" />
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical"
+        android:baselineAligned="false"
+        android:layout_marginEnd="5dp"
+        android:layout_marginStart="5dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="visible">
+            <androidx.core.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:baselineAligned="false"
+                    android:layout_marginEnd="5dp"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginEnd="5dp">
+
+
+                        <LinearLayout
+                            android:layout_weight="1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:weightSum="2"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_weight="1"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:padding="5dp"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/opd_ipd_no"
+                                    android:textStyle="bold"
+                                    android:layout_marginEnd="5dp"
+                                    android:textColor="@color/textHeading"
+                                    android:textSize="@dimen/secondaryText"/>
+
+                                <TextView
+                                    android:id="@+id/opd_ipd_no"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@color/textHeading"
+                                    android:text="@string/empty"
+                                    android:textSize="@dimen/secondaryText" />
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_weight="1"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:padding="5dp"
+                                android:orientation="horizontal">
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/opdcheckupid"
+                                    android:textStyle="bold"
+                                    android:layout_marginEnd="5dp"
+                                    android:textColor="@color/textHeading"
+                                    android:textSize="@dimen/secondaryText"/>
+                                <TextView
+                                    android:id="@+id/opdcheckupid"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@color/textHeading"
+                                    android:text="@string/empty"
+                                    android:textSize="@dimen/secondaryText" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="5dp"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/primary_examine"
+                                android:textStyle="bold"
+                                android:layout_marginEnd="5dp"
+                                android:textColor="@color/textHeading"
+                                android:textSize="@dimen/primaryText"/>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_weight="1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:weightSum="2"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_weight="1"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:padding="5dp"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/bleeding"
+                                    android:textStyle="bold"
+                                    android:layout_marginEnd="5dp"
+                                    android:textColor="@color/textHeading"
+                                    android:textSize="@dimen/secondaryText"/>
+
+                                <TextView
+                                    android:id="@+id/bleeding"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@color/textHeading"
+                                    android:text="@string/empty"
+                                    android:textSize="@dimen/secondaryText" />
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_weight="1"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:padding="5dp"
+                                android:orientation="horizontal">
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/headache"
+                                    android:textStyle="bold"
+                                    android:layout_marginEnd="5dp"
+                                    android:textColor="@color/textHeading"
+                                    android:textSize="@dimen/secondaryText"/>
+                                <TextView
+                                    android:id="@+id/headache"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@color/textHeading"
+                                    android:text="@string/empty"
+                                    android:textSize="@dimen/secondaryText" />
+                            </LinearLayout>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_weight="1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:weightSum="2"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_weight="1"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:padding="5dp"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/pain"
+                                    android:textStyle="bold"
+                                    android:layout_marginEnd="5dp"
+                                    android:textColor="@color/textHeading"
+                                    android:textSize="@dimen/secondaryText"/>
+
+                                <TextView
+                                    android:id="@+id/pain"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@color/textHeading"
+                                    android:text="@string/empty"
+                                    android:textSize="@dimen/secondaryText" />
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_weight="1"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:padding="5dp"
+                                android:orientation="horizontal">
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/constipation"
+                                    android:textStyle="bold"
+                                    android:layout_marginEnd="5dp"
+                                    android:textColor="@color/textHeading"
+                                    android:textSize="@dimen/secondaryText"/>
+                                <TextView
+                                    android:id="@+id/constipation"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@color/textHeading"
+                                    android:text="@string/empty"
+                                    android:textSize="@dimen/secondaryText" />
+                            </LinearLayout>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_weight="1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:weightSum="2"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_weight="1"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:padding="5dp"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/vomiting"
+                                    android:textStyle="bold"
+                                    android:layout_marginEnd="5dp"
+                                    android:textColor="@color/textHeading"
+                                    android:textSize="@dimen/secondaryText"/>
+
+                                <TextView
+                                    android:id="@+id/vomiting"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@color/textHeading"
+                                    android:text="@string/empty"
+                                    android:textSize="@dimen/secondaryText" />
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_weight="1"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:padding="5dp"
+                                android:orientation="horizontal">
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/cough"
+                                    android:textStyle="bold"
+                                    android:layout_marginEnd="5dp"
+                                    android:textColor="@color/textHeading"
+                                    android:textSize="@dimen/secondaryText"/>
+                                <TextView
+                                    android:id="@+id/cough"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@color/textHeading"
+                                    android:text="@string/empty"
+                                    android:textSize="@dimen/secondaryText" />
+                            </LinearLayout>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_weight="1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:weightSum="2"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_weight="1"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:padding="5dp"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/vaginal"
+                                    android:textStyle="bold"
+                                    android:layout_marginEnd="5dp"
+                                    android:textColor="@color/textHeading"
+                                    android:textSize="@dimen/secondaryText"/>
+
+                                <TextView
+                                    android:id="@+id/primary_vaginal"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@color/textHeading"
+                                    android:text="@string/empty"
+                                    android:textSize="@dimen/secondaryText" />
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_weight="1"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:padding="5dp"
+                                android:orientation="horizontal">
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/weight"
+                                    android:textStyle="bold"
+                                    android:layout_marginEnd="5dp"
+                                    android:textColor="@color/textHeading"
+                                    android:textSize="@dimen/secondaryText"/>
+                                <TextView
+                                    android:id="@+id/weight"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@color/textHeading"
+                                    android:text="@string/empty"
+                                    android:textSize="@dimen/secondaryText" />
+                            </LinearLayout>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_weight="1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:weightSum="2"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_weight="1"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:padding="5dp"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/height"
+                                    android:textStyle="bold"
+                                    android:layout_marginEnd="5dp"
+                                    android:textColor="@color/textHeading"
+                                    android:textSize="@dimen/secondaryText"/>
+
+                                <TextView
+                                    android:id="@+id/height"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@color/textHeading"
+                                    android:text="@string/empty"
+                                    android:textSize="@dimen/secondaryText" />
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_weight="1"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:padding="5dp"
+                                android:orientation="horizontal">
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/date"
+                                    android:textStyle="bold"
+                                    android:layout_marginEnd="5dp"
+                                    android:textColor="@color/textHeading"
+                                    android:textSize="@dimen/secondaryText"/>
+                                <TextView
+                                    android:id="@+id/primaryexamine_date"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@color/textHeading"
+                                    android:text="@string/empty"
+                                    android:textSize="@dimen/secondaryText" />
+                            </LinearLayout>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_weight="1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:weightSum="2"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_weight="1"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:padding="5dp"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/discharg"
+                                    android:textStyle="bold"
+                                    android:layout_marginEnd="5dp"
+                                    android:textColor="@color/textHeading"
+                                    android:textSize="@dimen/secondaryText"/>
+
+                                <TextView
+                                    android:id="@+id/discharg"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@color/textHeading"
+                                    android:text="@string/empty"
+                                    android:textSize="@dimen/secondaryText" />
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_weight="1"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:padding="5dp"
+                                android:orientation="horizontal">
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/oedema"
+                                    android:textStyle="bold"
+                                    android:layout_marginEnd="5dp"
+                                    android:textColor="@color/textHeading"
+                                    android:textSize="@dimen/secondaryText"/>
+                                <TextView
+                                    android:id="@+id/oedema"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@color/textHeading"
+                                    android:text="@string/empty"
+                                    android:textSize="@dimen/secondaryText" />
+                            </LinearLayout>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_weight="1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:weightSum="2"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:padding="5dp"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/condition"
+                                    android:textStyle="bold"
+                                    android:layout_marginEnd="5dp"
+                                    android:textColor="@color/textHeading"
+                                    android:textSize="@dimen/secondaryText"/>
+
+                                <TextView
+                                    android:id="@+id/condition"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@color/textHeading"
+                                    android:text="@string/empty"
+                                    android:textSize="@dimen/secondaryText" />
+                            </LinearLayout>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_weight="1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:weightSum="2"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:padding="5dp"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/specialfindingsremark"
+                                    android:textStyle="bold"
+                                    android:layout_marginEnd="5dp"
+                                    android:textColor="@color/textHeading"
+                                    android:textSize="@dimen/secondaryText"/>
+
+                                <TextView
+                                    android:id="@+id/specialfindingsremark"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@color/textHeading"
+                                    android:text="@string/empty"
+                                    android:textSize="@dimen/secondaryText" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_weight="1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:weightSum="2"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:padding="5dp"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/pelvicexamination"
+                                    android:textStyle="bold"
+                                    android:layout_marginEnd="5dp"
+                                    android:textColor="@color/textHeading"
+                                    android:textSize="@dimen/secondaryText"/>
+
+                                <TextView
+                                    android:id="@+id/pelvicexamination"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@color/textHeading"
+                                    android:text="@string/empty"
+                                    android:textSize="@dimen/secondaryText" />
+                            </LinearLayout>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_weight="1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:weightSum="2"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:padding="5dp"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/sp"
+                                    android:textStyle="bold"
+                                    android:layout_marginEnd="5dp"
+                                    android:textColor="@color/textHeading"
+                                    android:textSize="@dimen/secondaryText"/>
+
+                                <TextView
+                                    android:id="@+id/sp"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@color/textHeading"
+                                    android:text="@string/empty"
+                                    android:textSize="@dimen/secondaryText" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="5dp"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/antenatal_examine"
+                                android:textStyle="bold"
+                                android:layout_marginEnd="5dp"
+                                android:textColor="@color/textHeading"
+                                android:textSize="@dimen/primaryText"/>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_weight="1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:weightSum="2"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_weight="1"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:padding="5dp"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/uter_size"
+                                    android:textStyle="bold"
+                                    android:layout_marginEnd="5dp"
+                                    android:textColor="@color/textHeading"
+                                    android:textSize="@dimen/secondaryText"/>
+
+                                <TextView
+                                    android:id="@+id/uter_size"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@color/textHeading"
+                                    android:text="@string/empty"
+                                    android:textSize="@dimen/secondaryText" />
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_weight="1"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:padding="5dp"
+                                android:orientation="horizontal">
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/uterus_size"
+                                    android:textStyle="bold"
+                                    android:layout_marginEnd="5dp"
+                                    android:textColor="@color/textHeading"
+                                    android:textSize="@dimen/secondaryText"/>
+                                <TextView
+                                    android:id="@+id/uterus_size"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@color/textHeading"
+                                    android:text="@string/empty"
+                                    android:textSize="@dimen/secondaryText" />
+                            </LinearLayout>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_weight="1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:weightSum="2"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:padding="5dp"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/presentation_position"
+                                    android:textStyle="bold"
+                                    android:layout_marginEnd="5dp"
+                                    android:textColor="@color/textHeading"
+                                    android:textSize="@dimen/secondaryText"/>
+
+                                <TextView
+                                    android:id="@+id/presentation_position"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@color/textHeading"
+                                    android:text="@string/empty"
+                                    android:textSize="@dimen/secondaryText" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_weight="1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:weightSum="2"
+                            android:orientation="horizontal">
+
+
+                            <LinearLayout
+
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:padding="5dp"
+                                android:orientation="horizontal">
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/presenting_part_brim"
+                                    android:textStyle="bold"
+                                    android:layout_marginEnd="5dp"
+                                    android:textColor="@color/textHeading"
+                                    android:textSize="@dimen/secondaryText"/>
+                                <TextView
+                                    android:id="@+id/presenting_part_brim"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@color/textHeading"
+                                    android:text="@string/empty"
+                                    android:textSize="@dimen/secondaryText" />
+                            </LinearLayout>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_weight="1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:weightSum="2"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_weight="1"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:padding="5dp"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/foeta_heart"
+                                    android:textStyle="bold"
+                                    android:layout_marginEnd="5dp"
+                                    android:textColor="@color/textHeading"
+                                    android:textSize="@dimen/secondaryText"/>
+
+                                <TextView
+                                    android:id="@+id/foeta_heart"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@color/textHeading"
+                                    android:text="@string/empty"
+                                    android:textSize="@dimen/secondaryText" />
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_weight="1"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:padding="5dp"
+                                android:orientation="horizontal">
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/blood_pressure"
+                                    android:textStyle="bold"
+                                    android:layout_marginEnd="5dp"
+                                    android:textColor="@color/textHeading"
+                                    android:textSize="@dimen/secondaryText"/>
+                                <TextView
+                                    android:id="@+id/blood_pressure"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@color/textHeading"
+                                    android:text="@string/empty"
+                                    android:textSize="@dimen/secondaryText" />
+                            </LinearLayout>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_weight="1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:weightSum="2"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_weight="1"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:padding="5dp"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/vaginal"
+                                    android:textStyle="bold"
+                                    android:layout_marginEnd="5dp"
+                                    android:textColor="@color/textHeading"
+                                    android:textSize="@dimen/secondaryText"/>
+
+                                <TextView
+                                    android:id="@+id/vaginal"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@color/textHeading"
+                                    android:text="@string/empty"
+                                    android:textSize="@dimen/secondaryText" />
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_weight="1"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:padding="5dp"
+                                android:orientation="horizontal">
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/antenatal_weight"
+                                    android:textStyle="bold"
+                                    android:layout_marginEnd="5dp"
+                                    android:textColor="@color/textHeading"
+                                    android:textSize="@dimen/secondaryText"/>
+                                <TextView
+                                    android:id="@+id/antenatal_weight"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@color/textHeading"
+                                    android:text="@string/empty"
+                                    android:textSize="@dimen/secondaryText" />
+                            </LinearLayout>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_weight="1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:weightSum="2"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_weight="1"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:padding="5dp"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/antenatal_oedema"
+                                    android:textStyle="bold"
+                                    android:layout_marginEnd="5dp"
+                                    android:textColor="@color/textHeading"
+                                    android:textSize="@dimen/secondaryText"/>
+
+                                <TextView
+                                    android:id="@+id/antenatal_oedema"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@color/textHeading"
+                                    android:text="@string/empty"
+                                    android:textSize="@dimen/secondaryText" />
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_weight="1"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:padding="5dp"
+                                android:orientation="horizontal">
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/urine"
+                                    android:textStyle="bold"
+                                    android:layout_marginEnd="5dp"
+                                    android:textColor="@color/textHeading"
+                                    android:textSize="@dimen/secondaryText"/>
+                                <TextView
+                                    android:id="@+id/urine"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@color/textHeading"
+                                    android:text="@string/empty"
+                                    android:textSize="@dimen/secondaryText" />
+                            </LinearLayout>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_weight="1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:weightSum="2"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_weight="1"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:padding="5dp"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/urine_aaibumen"
+                                    android:textStyle="bold"
+                                    android:layout_marginEnd="5dp"
+                                    android:textColor="@color/textHeading"
+                                    android:textSize="@dimen/secondaryText"/>
+
+                                <TextView
+                                    android:id="@+id/urine_aaibumen"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@color/textHeading"
+                                    android:text="@string/empty"
+                                    android:textSize="@dimen/secondaryText" />
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_weight="1"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:padding="5dp"
+                                android:orientation="horizontal">
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/remark"
+                                    android:textStyle="bold"
+                                    android:layout_marginEnd="5dp"
+                                    android:textColor="@color/textHeading"
+                                    android:textSize="@dimen/secondaryText"/>
+                                <TextView
+                                    android:id="@+id/remark"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@color/textHeading"
+                                    android:text="@string/empty"
+                                    android:textSize="@dimen/secondaryText" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_weight="1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:weightSum="2"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_weight="1"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:padding="5dp"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/nextvisit"
+                                    android:textStyle="bold"
+                                    android:layout_marginEnd="5dp"
+                                    android:textColor="@color/textHeading"
+                                    android:textSize="@dimen/secondaryText"/>
+
+                                <TextView
+                                    android:id="@+id/nextvisit"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@color/textHeading"
+                                    android:text="@string/empty"
+                                    android:textSize="@dimen/secondaryText" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_weight="1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/gegeges"
+                            android:weightSum="2"
+                            android:layout_marginBottom="5dp"
+                            android:orientation="horizontal">
+                            <androidx.recyclerview.widget.RecyclerView
+                                android:id="@+id/recyclerview"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"/>
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </androidx.core.widget.NestedScrollView>
+        </RelativeLayout>
+
+    </LinearLayout>
+</LinearLayout>

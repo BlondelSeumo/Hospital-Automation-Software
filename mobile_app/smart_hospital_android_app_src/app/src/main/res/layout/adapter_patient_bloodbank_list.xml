@@ -1,0 +1,470 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    android:id="@+id/adapter_patient_bloodbank_viewContainer"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    style="@style/CustomCardView">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible">
+
+        <RelativeLayout
+            android:id="@+id/adapter_patient_bloodbank_subjectLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/adapter_patient_bloodbank_billno"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="start|center"
+                android:minHeight="40dp"
+                android:padding="5dp"
+                android:text="@string/bill"
+                android:textColor="@color/textHeading"
+                android:textSize="@dimen/primaryText"
+                android:textStyle="bold" />
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:background="@color/transparent"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/adapter_patient_bloodbank_viewpaymentBtn"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginEnd="10dp"
+                    android:paddingTop="2dp"
+                    android:paddingBottom="2dp"
+                    android:src="@drawable/payment" />
+
+                <TextView
+                    android:id="@+id/adapter_patient_bloodbank_paymentBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:text="@string/pay"
+                    android:textColor="@color/white"
+                    android:background="@drawable/green_border"
+                    android:paddingBottom="2dp"
+                    android:textStyle="bold"
+                    android:src="@drawable/payment" />
+
+                <LinearLayout
+                    android:id="@+id/adapter_patient_bloodbank_detailsBtn"
+                    android:layout_width="70dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentEnd="true"
+                    android:background="@color/transparent"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/ic_view" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/view"
+                        android:textColor="@color/hyperLink" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:baselineAligned="false"
+            android:layout_below="@+id/adapter_patient_bloodbank_subjectLayout">
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="2"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="5dp"
+                    android:text="@string/Issuedate"
+                    android:textColor="@color/textHeading"
+                    android:textSize="@dimen/secondaryText"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/adapter_patient_bloodbank_issuedate"
+                    android:layout_width="wrap_content"
+                    android:text="25-02-2020"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/textHeading"
+                    android:textSize="@dimen/secondaryText" />
+            </LinearLayout>
+
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginEnd="5dp"
+                        android:text="@string/caseid"
+                        android:textColor="@color/textHeading"
+                        android:textSize="@dimen/secondaryText"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/adapter_patient_bloodbank_caseid"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/textHeading"
+                        android:textSize="@dimen/secondaryText" />
+                </LinearLayout>
+
+            </LinearLayout>
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="2"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginEnd="5dp"
+                        android:text="@string/bloodgroup"
+                        android:textColor="@color/textHeading"
+                        android:textSize="@dimen/secondaryText"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/adapter_patient_bloodbank_bloodgroup"
+                        android:layout_width="wrap_content"
+                        android:text="@string/empty"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/textHeading"
+                        android:textSize="@dimen/secondaryText" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/netamount"
+                            android:layout_marginEnd="5dp"
+                            android:textColor="@color/textHeading"
+                            android:textSize="@dimen/secondaryText"
+                            android:textStyle="bold"
+                            />
+
+                        <TextView
+                            android:id="@+id/adapter_patient_bloodbank_charge"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/empty"
+                            android:textColor="@color/textHeading"
+                            android:textSize="@dimen/secondaryText" />
+                    </LinearLayout>
+                </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="2"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/bagno"
+                    android:layout_marginEnd="5dp"
+                    android:textColor="@color/textHeading"
+                    android:textSize="@dimen/secondaryText"
+                    android:textStyle="bold"
+                     />
+
+                <TextView
+                    android:id="@+id/adapter_patient_bloodbank_bagno"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/empty"
+                    android:textColor="@color/textHeading"
+                    android:textSize="@dimen/secondaryText" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/paidamount"
+                        android:layout_marginEnd="5dp"
+                        android:textColor="@color/textHeading"
+                        android:textSize="@dimen/secondaryText"
+                        android:textStyle="bold"
+                        />
+
+                    <TextView
+                        android:id="@+id/adapter_patient_bloodbank_paidamount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/empty"
+                        android:textColor="@color/textHeading"
+                        android:textSize="@dimen/secondaryText" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="2"
+                android:layout_marginStart="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginEnd="5dp">
+
+                <LinearLayout
+                    android:id="@+id/adapter_patient_dateLayout"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="3dp"
+                    android:layout_weight="1"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/donor"
+                        android:textStyle="bold"
+                        android:layout_marginRight="5dp"
+                        android:textColor="@color/textHeading"
+                        android:textSize="@dimen/secondaryText"/>
+
+                    <TextView
+                        android:id="@+id/adapter_patient_bloodbank_donor"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/textHeading"
+                        android:text="@string/empty"
+                        android:textSize="@dimen/secondaryText" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/balance_amount"
+                        android:layout_marginEnd="5dp"
+                        android:textColor="@color/textHeading"
+                        android:textSize="@dimen/secondaryText"
+                        android:textStyle="bold"
+                        />
+
+                    <TextView
+                        android:id="@+id/adapter_patient_bloodbank_balance"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/empty"
+                        android:textColor="@color/textHeading"
+                        android:textSize="@dimen/secondaryText" />
+                </LinearLayout>
+                </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="2"
+                android:layout_marginStart="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginEnd="5dp">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="3dp"
+                    android:layout_weight="1"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/tpa"
+                        android:textStyle="bold"
+                        android:layout_marginRight="5dp"
+                        android:textColor="@color/textHeading"
+                        android:textSize="@dimen/secondaryText"/>
+
+                    <TextView
+                        android:id="@+id/adapter_patient_bloodbank_tpa"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/textHeading"
+                        android:text="@string/empty"
+                        android:textSize="@dimen/secondaryText" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/tpaValidity"
+                        android:layout_marginEnd="5dp"
+                        android:textColor="@color/textHeading"
+                        android:textSize="@dimen/secondaryText"
+                        android:textStyle="bold"
+                        />
+
+                    <TextView
+                        android:id="@+id/adapter_patient_bloodbank_tpaValidity"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/empty"
+                        android:textColor="@color/textHeading"
+                        android:textSize="@dimen/secondaryText" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="2"
+                android:layout_marginStart="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginEnd="5dp">
+
+                <LinearLayout
+
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="3dp"
+                    android:layout_weight="1"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/tpaId"
+                        android:textStyle="bold"
+                        android:layout_marginRight="5dp"
+                        android:textColor="@color/textHeading"
+                        android:textSize="@dimen/secondaryText"/>
+
+                    <TextView
+                        android:id="@+id/adapter_patient_bloodbank_tpaId"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/textHeading"
+                        android:text="@string/empty"
+                        android:textSize="@dimen/secondaryText" />
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/technician"
+                        android:layout_marginEnd="5dp"
+                        android:textColor="@color/textHeading"
+                        android:textSize="@dimen/secondaryText"
+                        android:textStyle="bold"
+                        />
+
+                    <TextView
+                        android:id="@+id/adapter_patient_bloodbank_technician"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/empty"
+                        android:textColor="@color/textHeading"
+                        android:textSize="@dimen/secondaryText" />
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/gegeges"
+                android:weightSum="2"
+                android:layout_marginBottom="5dp"
+                android:orientation="horizontal">
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

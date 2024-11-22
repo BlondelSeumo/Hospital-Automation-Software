@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PatientAddAppoinment"
+    android:orientation="vertical">
+
+    <!--Secondary Action-bar looking view -->
+    <FrameLayout
+        android:id="@+id/actionBarSecondary"
+        android:layout_width="match_parent"
+        android:layout_height="56dp">
+
+        <RelativeLayout android:layout_width="fill_parent"
+            android:layout_height="56dp">
+
+            <ImageView
+                android:id="@+id/actionBar_backBtn"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/ic_back"
+                android:layout_gravity="start"
+                android:padding="19dp"/>
+
+            <TextView
+                android:id="@+id/actionBar_title"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/actionBar_backBtn"
+                android:layout_marginStart="10dp"
+                android:scaleType="fitXY"
+                android:adjustViewBounds="true"
+                android:textSize="@dimen/heading"
+                android:textColor="@color/white"
+                android:gravity="center_vertical" />
+
+
+            <LinearLayout
+                android:id="@+id/baseActivity_taskBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="15dp"
+                android:background="@color/transparent"
+                android:visibility="gone">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/ic_dashboard_pandingtask"
+                    android:padding="5dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/task"
+                    android:textSize="@dimen/primaryText"
+                    android:textColor="@color/white"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+    </FrameLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <RelativeLayout
+                            android:id="@+id/layoutBottom"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            >
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:layout_margin="10dp"
+                                android:padding="5dp">
+
+
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical">
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="10dp"
+                                        android:layout_marginTop="10dp"
+                                        android:layout_marginRight="10dp"
+                                        android:text="@string/specialist"
+                                        android:padding="5dp"
+                                        android:textColor="@color/textHeading"
+                                        android:textStyle="bold" />
+
+                                    <Spinner
+                                        android:id="@+id/specialist_spinner"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="40dp"
+                                        android:layout_marginLeft="10dp"
+                                        android:layout_marginRight="10dp"
+                                        android:background="@drawable/grey_outline"
+                                        android:textSize="@dimen/secondaryText" />
+
+                                </LinearLayout>
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="10dp"
+                                        android:layout_marginTop="10dp"
+                                        android:layout_marginRight="10dp"
+                                        android:text="@string/doctor"
+                                        android:padding="5dp"
+                                        android:textColor="@color/textHeading"
+                                        android:textStyle="bold" />
+
+                                    <Spinner
+                                        android:id="@+id/Doctor_spinner"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="40dp"
+                                        android:layout_marginLeft="10dp"
+                                        android:layout_marginRight="10dp"
+                                        android:background="@drawable/grey_outline"
+                                        android:textSize="@dimen/secondaryText" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="10dp"
+                                        android:layout_marginTop="10dp"
+                                        android:layout_marginRight="10dp"
+                                        android:text="@string/shift"
+                                        android:padding="5dp"
+                                        android:textColor="@color/textHeading"
+                                        android:textStyle="bold" />
+
+                                    <Spinner
+                                        android:id="@+id/Shift_spinner"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="40dp"
+                                        android:layout_marginLeft="10dp"
+                                        android:layout_marginRight="10dp"
+                                        android:background="@drawable/grey_outline"
+                                        android:textSize="@dimen/secondaryText" />
+
+                                </LinearLayout>
+                               <!-- <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical">
+
+                                    <GridView
+                                        android:id="@+id/timeslots"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:numColumns="3"
+                                        android:gravity="center"
+                                        android:visibility="visible"
+                                        android:stretchMode="columnWidth" />
+
+                                </LinearLayout>-->
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="10dp"
+                                        android:layout_marginTop="10dp"
+                                        android:layout_marginRight="10dp"
+                                        android:text="@string/live_consultant"
+                                        android:padding="5dp"
+                                        android:textColor="@color/textHeading"
+                                        android:textStyle="bold" />
+
+                                    <Spinner
+                                        android:id="@+id/Live_spinner"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="40dp"
+                                        android:layout_marginLeft="10dp"
+                                        android:layout_marginRight="10dp"
+                                        android:background="@drawable/grey_outline"
+                                        android:textSize="@dimen/secondaryText" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:weightSum="2"
+                                    android:orientation="horizontal">
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:orientation="vertical">
+
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginTop="10dp"
+                                            android:layout_marginRight="10dp"
+                                            android:layout_marginLeft="10dp"
+                                            android:text="@string/date"
+                                            android:padding="5dp"
+                                            android:textColor="@color/textHeading"
+                                            android:textStyle="bold" />
+                                        <EditText
+                                            android:id="@+id/date"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="40dp"
+                                            android:layout_marginLeft="10dp"
+                                            android:layout_marginRight="10dp"
+                                            android:background="@drawable/grey_outline"
+                                            android:editable="false"
+                                            android:focusable="false"
+                                            android:padding="5dp"
+                                            android:textSize="@dimen/primaryText" />
+                                    </LinearLayout>
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="10dp"
+                                        android:layout_marginTop="10dp"
+                                        android:layout_marginRight="10dp"
+                                        android:padding="5dp"
+                                        android:text="@string/message"
+                                        android:textColor="@color/textHeading"
+                                        android:textStyle="bold" />
+                                    <EditText
+                                        android:id="@+id/message"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="10dp"
+                                        android:layout_marginRight="10dp"
+                                        android:background="@drawable/grey_outline"
+                                        android:padding="10dp"
+                                        android:text=""
+                                        android:textSize="@dimen/secondaryText" />
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                       >
+
+                                        <androidx.recyclerview.widget.RecyclerView
+                                            android:id="@+id/recyclerview"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content" />
+
+                                    </LinearLayout>
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="10dp"
+                                        android:layout_marginTop="10dp"
+                                        android:layout_marginRight="10dp"
+                                        android:text="@string/slot"
+                                        android:padding="5dp"
+                                        android:textColor="@color/textHeading"
+                                        android:textStyle="bold" />
+                                    <TextView
+                                        android:id="@+id/noslots"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="10dp"
+                                        android:layout_marginTop="10dp"
+                                        android:layout_marginRight="10dp"
+                                        android:text="@string/noslot"
+                                        android:background="@color/pink"
+                                        android:gravity="center"
+                                        android:padding="5dp"
+                                        android:textColor="@color/textHeading"
+                                        android:textStyle="bold" />
+
+                                    <androidx.core.widget.NestedScrollView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content">
+                                        <LinearLayout
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:orientation="vertical">
+                                    <ListView
+                                        android:id="@+id/slots"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:visibility="visible"/>
+                                            <GridView
+                                                android:id="@+id/timeslots"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="match_parent"
+                                                android:numColumns="3"
+                                                android:gravity="center"
+                                                android:visibility="visible"
+                                                android:stretchMode="columnWidth" >
+                                            </GridView>
+                                        </LinearLayout>
+                                    </androidx.core.widget.NestedScrollView>
+                                </LinearLayout>
+                            </LinearLayout>
+                        </RelativeLayout>
+                    </RelativeLayout>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

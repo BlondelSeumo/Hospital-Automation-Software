@@ -1,0 +1,85 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+
+        <item name="android:typeface">sans</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="RobotoCalendarMonthText">
+        <item name="android:textColor">#ffffff</item>
+        <!--<item name="android:textColor">@color/myPrimaryColor</item>-->
+    </style>
+
+    <style name="RobotoCalendarMonthArrow">
+        <item name="android:tint">#030303</item>
+        <!--<item name="android:tint">@color/myPrimaryColor</item>-->
+    </style>
+
+    <style name="RobotoCalendarDayOfTheWeekText">
+        <item name="android:textSize">@dimen/roboto_calendar_day_of_week_font</item>
+        <item name="android:textColor">@color/roboto_calendar_day_of_the_month_font</item>
+    </style>
+
+    <style name="RobotoCalendarDayOfTheMonthText">
+        <item name="android:textSize">@dimen/roboto_calendar_day_of_the_month_font</item>
+        <item name="android:textColor">@color/roboto_calendar_day_of_the_month_font</item>
+    </style>
+
+    <style name="CustomTablayout" parent="TextAppearance.Design.Tab">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/textHeading</item>
+    </style>
+
+    <style name="DialogTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:background">@color/transparent</item>
+        <item name="android:windowEnterAnimation">@anim/enter</item>
+        <item name="android:windowExitAnimation">@anim/exit</item>
+    </style>
+
+    <style name="CustomCardView" parent="CardView">
+        <item name="cardCornerRadius">0dp</item>
+        <item name="android:layout_marginTop">@dimen/card_start</item>
+        <item name="android:layout_marginBottom">@dimen/card_bottom</item>
+        <item name="android:layout_marginStart">@dimen/card_start</item>
+        <item name="android:layout_marginEnd">@dimen/card_end</item>
+        <item name="android:elevation">4dp</item>
+        <item name="android:clipToPadding">true</item>
+        <item name="cardPreventCornerOverlap">true</item>
+        <item name="cardBackgroundColor">@color/white</item>
+    </style>
+
+    <style name="BottomNavigationActive">
+        <item name="android:textSize">9sp</item>
+        <item name="android:padding">0dp</item>
+        <item name="textAllCaps">false</item>
+    </style>
+
+    <style name="BottomNavigationInactive">
+        <item name="android:textSize">9sp</item>
+        <item name="android:padding">0dp</item>
+        <item name="textAllCaps">false</item>
+    </style>
+
+    <style name="NavigationTheme" parent="AppTheme">
+        <item name="android:textSize">@dimen/primaryText</item>
+        <item name="android:textStyle">bold</item>
+
+    </style>
+
+    <style name="NavTextAppearance" parent="AppTheme">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/textHeading</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+</resources>

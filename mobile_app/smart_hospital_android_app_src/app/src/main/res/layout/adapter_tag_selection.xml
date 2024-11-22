@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/adapter_tags"
+    >
+
+
+    <TextView
+        android:id="@+id/slot"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:button="@null"
+        android:text="sfsfsfsf"
+        android:textColor="@color/textHeading"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:background="@drawable/circle_grey"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:layout_margin="10dp"
+        />
+
+
+
+
+
+<!--    <RadioGroup-->
+<!--        android:id="@+id/newStudentLidt_Rg"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="70dp"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        android:orientation="horizontal" >-->
+
+<!--        -->
+
+<!--        <RadioButton-->
+<!--            android:id="@+id/newStuBtn_RB_present"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="fill_parent"-->
+<!--            android:layout_weight="1"-->
+<!--            android:background="@drawable/radio_btn_present"-->
+<!--            android:button="@null"-->
+<!--            android:gravity="center"-->
+<!--            android:padding="5dp"-->
+<!--            android:text="P"-->
+<!--            android:layout_marginRight="5dp"-->
+<!--            android:textColor="@drawable/tag_selector_text" />-->
+
+<!--        <RadioButton-->
+<!--            android:id="@+id/newStuBtn_RB_absent"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="fill_parent"-->
+<!--            android:layout_weight="1"-->
+<!--            android:background="@drawable/radio_btn_absent"-->
+<!--            android:button="@null"-->
+<!--            android:gravity="center"-->
+<!--            android:padding="5dp"-->
+<!--            android:text="A"-->
+<!--            android:layout_marginRight="5dp"-->
+<!--            android:textColor="@drawable/tag_selector_text" />-->
+<!--    </RadioGroup>-->
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/adapter_tags_iconsIV"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginEnd="5dp"
+        android:visibility="gone"
+        />
+
+    <TextView
+        android:id="@+id/adapter_tags_titleTV"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Test"
+        android:gravity="center"
+        android:textColor="@color/primaryTextColour"
+        android:textSize="@dimen/primaryText"
+        android:visibility="gone"
+        />
+
+</LinearLayout>

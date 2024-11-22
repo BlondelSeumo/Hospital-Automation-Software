@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:showIn="navigation_view">
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home_black_24dp"
+            android:title="@string/home" />
+
+        <item
+            android:id="@+id/nav_profile"
+            android:icon="@drawable/ic_person_black"
+            android:title="@string/profile" />
+
+        <item
+            android:id="@+id/nav_appoinments"
+            android:icon="@drawable/medical_appointment"
+            android:title="@string/MyAppointments" />
+
+        <item
+            android:id="@+id/nav_opd"
+            android:icon="@drawable/ic_opd_new"
+            android:title="@string/OPD"/>
+
+        <item
+            android:id="@+id/nav_ipd"
+            android:icon="@drawable/ic_ipd"
+            android:title="@string/IPD" />
+
+        <item
+            android:id="@+id/nav_pharmacy"
+            android:icon="@drawable/ic_pharmacy_new"
+            android:title="@string/Pharmacy" />
+
+        <item
+            android:id="@+id/nav_pathology"
+            android:icon="@drawable/ic_pathology_new"
+            android:title="@string/Pathology" />
+
+        <item
+            android:id="@+id/nav_radiology"
+            android:icon="@drawable/ic_radiology_new"
+            android:title="@string/Radiology" />
+
+        <item
+            android:id="@+id/nav_ambulance"
+            android:icon="@drawable/ic_ambulance_new"
+            android:title="@string/Ambulance" />
+
+        <item
+            android:id="@+id/nav_bloodbank"
+            android:icon="@drawable/ic_bloodbank_new"
+            android:title="@string/BloodBank" />
+
+        <item
+            android:id="@+id/nav_liveconsult"
+            android:icon="@drawable/ic_liveconsult"
+            android:title="@string/liveconsult" />
+        <item
+            android:id="@+id/nav_contentsharelist"
+            android:icon="@drawable/ic_nav_download"
+            android:title="@string/contentsharelist" />
+
+        <item
+            android:id="@+id/nav_about"
+            android:icon="@drawable/ic_nav_about"
+            android:title="@string/about" />
+
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/ic_nav_logout"
+            android:title="@string/Logout" />
+
+    </group>
+
+    <group
+        android:id="@+id/nav_footer">
+        <item
+            android:id="@+id/nav_log_version"
+            android:title="@string/empty"
+            app:actionLayout="@layout/nav_footer"/>
+    </group>
+</menu>

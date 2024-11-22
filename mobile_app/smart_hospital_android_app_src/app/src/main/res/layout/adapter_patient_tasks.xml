@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/CustomCardView">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:id="@+id/adapter_task_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <androidx.appcompat.widget.AppCompatCheckBox
+                android:id="@+id/adapter_task_checkbox"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="10dp" />
+
+            <TextView
+                android:id="@+id/adapter_task_TaskNameTV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/primaryText"
+                android:text="@string/empty"
+                android:textStyle="bold"
+                android:textColor="@color/textHeading"
+                android:gravity="start|center"
+                android:layout_toEndOf="@id/adapter_task_checkbox"
+                android:layout_toStartOf="@+id/edit"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginTop="10dp"
+                android:paddingStart="5dp"
+                android:paddingEnd="10dp"
+                android:paddingTop="5dp" />
+
+            <TextView
+                android:id="@+id/adapter_task_TaskDateTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/adapter_task_checkbox"
+                android:layout_below="@+id/adapter_task_TaskNameTV"
+                android:layout_toStartOf="@+id/edit"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:paddingStart="5dp"
+                android:textSize="@dimen/secondaryText"
+                android:textColor="@color/textHeading"
+                android:text="@string/empty" />
+
+
+            <ImageView
+                android:id="@+id/edit"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="40dp"
+                android:layout_marginStart="10dp"
+                android:src="@drawable/ic_edit_black"/>
+
+            <ImageView
+               android:id="@+id/delete"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="5dp"
+                android:layout_marginStart="15dp"
+                android:src="@drawable/ic_delete_black_24dp"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
+

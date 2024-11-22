@@ -1,0 +1,62 @@
+apply plugin: 'com.android.application'
+
+android {
+
+    namespace 'com.qdocs.smarthospital24'
+    compileSdk 34
+    defaultConfig {
+        applicationId "com.qdocs.smarthospital24"
+        minSdk 24
+        targetSdk 34
+        versionCode 1
+        versionName "3.0"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    lintOptions {
+        disable 'RestrictedApi'
+        checkReleaseBuilds false
+        abortOnError false
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    implementation 'androidx.lifecycle:lifecycle-extensions:2.2.0'
+    implementation 'androidx.activity:activity:1.8.0'
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test:runner:1.5.2'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+    implementation 'com.android.volley:volley:1.2.1'
+    implementation 'androidx.cardview:cardview:1.0.0'
+    implementation 'com.squareup.picasso:picasso:2.5.2'
+    implementation 'com.google.firebase:firebase-messaging:20.0.0'
+    implementation 'de.hdodenhof:circleimageview:2.2.0'
+    implementation 'com.google.android.material:material:1.11.0'
+    implementation 'pl.droidsonroids.gif:android-gif-drawable:1.2.10'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation "com.daimajia.swipelayout:library:1.2.0@aar"
+    implementation 'com.google.android.material:material:1.0.0-beta01'
+    // Chart and graph library
+    implementation 'com.github.blackfizz:eazegraph:1.2.5l@aar'
+    implementation 'com.nineoldandroids:library:2.4.0'
+    implementation "com.squareup.okhttp3:okhttp:3.10.0"
+
+
+
+}
+apply plugin: 'com.google.gms.google-services'

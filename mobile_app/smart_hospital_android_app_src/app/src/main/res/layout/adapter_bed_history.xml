@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    android:id="@+id/adapter_patient_ot_viewContainer"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    style="@style/CustomCardView">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible">
+
+        <RelativeLayout
+            android:id="@+id/adapter_patient_ot_headLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/adapter_patient_bedgroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="start|center"
+                android:minHeight="40dp"
+                android:padding="5dp"
+                android:layout_marginLeft="10dp"
+                android:text=""
+                android:textColor="@color/textHeading"
+                android:textSize="@dimen/primaryText"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_alignParentEnd="true"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:background="@color/transparent"
+                android:layout_centerVertical="true">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Active Bed"
+                    android:textColor="@color/textHeading"
+                    android:textSize="@dimen/secondaryText"
+                    android:textStyle="bold"
+                    android:layout_marginEnd="5dp" />
+
+                <TextView
+                    android:id="@+id/adapter_patient_active"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:textColor="@color/white"
+                    android:background="@drawable/green_border"
+                    android:paddingBottom="2dp"
+                    android:textStyle="bold"
+                    android:src="@drawable/payment" />
+
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:baselineAligned="false"
+            android:layout_marginEnd="5dp"
+            android:layout_marginStart="10dp"
+            android:layout_below="@+id/adapter_patient_ot_headLayout">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginEnd="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="5dp"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/bed"
+                        android:textStyle="bold"
+                        android:layout_marginEnd="5dp"
+                        android:textColor="@color/textHeading"
+                        android:textSize="@dimen/secondaryText"/>
+
+                    <TextView
+                        android:id="@+id/adapter_patient_bed"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/textHeading"
+                        android:text="@string/empty"
+                        android:textSize="@dimen/secondaryText" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/adapter_patient_ot_idLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="5dp"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/fromDate"
+                        android:textStyle="bold"
+                        android:layout_marginEnd="5dp"
+                        android:textColor="@color/textHeading"
+                        android:textSize="@dimen/secondaryText"/>
+                    <TextView
+                        android:id="@+id/adapter_patient_fromdate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/textHeading"
+                        android:text="@string/empty"
+                        android:textSize="@dimen/secondaryText" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/adapter_patient_ot_subjectLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:weightSum="2"
+                   android:layout_marginStart="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_below="@+id/adapter_patient_ot_idLayout">
+
+                    <LinearLayout
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:weightSum="2"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/toDate"
+                            android:textColor="@color/textHeading"
+                            android:textSize="@dimen/secondaryText"
+                            android:textStyle="bold"
+                            android:layout_marginEnd="5dp" />
+                        <TextView
+                            android:id="@+id/adapter_patient_todate"
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:text="@string/empty"
+                            android:textColor="@color/textHeading"
+                            android:textSize="@dimen/secondaryText" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
+

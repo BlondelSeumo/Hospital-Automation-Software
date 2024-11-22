@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3399FF</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorPrimaryDarktheme">#3399FF</color>
+    <color name="colorAccent">#030303</color>
+
+    <!--faa21c-->
+
+    <color name="fontPrimary">#004a6b</color>
+    <color name="transparent">#00004a6b</color>
+    <color name="hyperLink">#012ff9</color>
+    <color name="payBtn">#1a73e8</color>
+    <color name="grey">#D8D6D3D3</color>
+
+    <color name="whites">#ffff5722</color>
+    <array name="whiteslist">
+        <item>@color/whites</item>
+        <item>@color/whites</item>
+        <item>@color/whites</item>
+    </array>
+
+    <color name="white">#ffffff</color>
+    <color name="green">#66aa18</color>
+    <color name="darkgreen">#008000</color>
+    <color name="yellow">#ffc632</color>
+    <color name="highlight">#3399FF</color>
+    <color name="orange">#ff9801</color>
+    <color name="textHeading">#000000</color>
+
+    <color name="backgroundColour">#ffffff</color>
+    <color name="drawerIndicatorColour">#ffffff</color>
+    <color name="primaryTextColour">#000000</color>
+    <color name="hintDark">#DD5B5B5B</color>
+    <color name="seperator">#afafaf</color>
+    <color name="tabtext">#ECEFF4</color>
+    <color name="seperatorline">#686565</color>
+    <color name="lightGrey">#c3c3c3</color>
+
+
+    <color name="red">#ed5c5c</color>
+    <color name="redDanger">#FA0000</color>
+    <color name="pink">#83FA0000</color>
+    <color name="lightpink">#FFCED4</color>
+    <color name="primaryTextColourLight">#004a6b</color>
+
+    <color name="themeCyan">#8200dcbb</color>
+    <color name="themeGreen">#13e2da</color>
+    <color name="timeline_title">#00C4EF</color>
+
+    <color name="roboto_calendar_background">#FFFFFF</color>
+    <color name="roboto_calendar_day_of_the_week_font">#161d20</color>
+    <color name="roboto_calendar_selected_day_font">#FFFFFF</color>
+    <color name="roboto_calendar_current_day_ring">#00a3d3</color>
+    <color name="roboto_calendar_day_of_the_month_font">#000000</color>
+    <color name="roboto_calendar_circle_1">#008000</color>  <!-- Small Circle -->
+    <color name="roboto_calendar_circle_2">#8B0000</color>  <!-- Small Circle -->
+    <color name="roboto_calendar_circle_3">#FFFF00</color>  <!-- Small Circle -->
+    <color name="roboto_calendar_circle_4">#ff9500</color>  <!-- Small Circle -->
+    <color name="roboto_calendar_circle_5">#969595</color>  <!-- Small Circle -->
+    <color name="roboto_calendar_month_arrow">#55c6da</color>
+
+</resources>

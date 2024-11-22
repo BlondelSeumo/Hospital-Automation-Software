@@ -1,0 +1,380 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Smart Hospital</string>
+    <string name="empty"></string>
+
+    <!--TAKE URL PAGE-->
+    <string name="domainHead">अपने अस्पताल का युआरएल दर्ज करें</string>
+    <string name="submit">जमा करें</string>
+    <!--TAKE URL PAGE-->
+
+    <!--LOGIN PAGE    -->
+    <string name="login">लॉग इन करें</string>
+    <string name="userNameHint">उपयोगकर्ता नाम दर्ज करें</string>
+    <string name="userPasswordHint">पासवर्ड दर्ज करें</string>
+    <string name="forgotPassword">पासवर्ड भूल गए?</string>
+    <string name="changeUrl">डोमेन बदलें</string>
+    <string name="privacyPolicy">Privacy Policy</string>
+    <!--LOGIN PAGE-->
+
+
+    <!--MENU-->
+    <string name="home">होम</string>
+    <string name="profile">प्रोफ़ाइल</string>
+    <string name="MyAppointments">मेरी अपॉइंटमेंट्स</string>
+    <string name="addAppoinments">अपॉइंटमेंट् जोड़ें</string>
+    <string name="bookAppoinments">अपॉइंटमेंट् जोड़ें  </string>
+    <string name="successAppoinments">अपॉइंटमेंट् जोड़ी गई</string>
+    <string name="OPD">ओपीडी</string>
+    <string name="IPD">आईपीडी</string>
+    <string name="Pharmacy">फार्मेसी</string>
+    <string name="Pathology">पैथोलॉजी </string>
+    <string name="Radiology">रेडियोलोजी</string>
+    <string name="OperationTheatre">ऑपरेशन थिएटर</string>
+    <string name="Ambulance">एम्बुलेंस </string>
+    <string name="BloodBank">रक्त बैंक</string>
+    <string name="liveconsult">लाइव परामर्श</string>
+    <string name="about">अस्पताल की जानकारी</string>
+    <string name="contentsharelist">डाउनलोड केंद्र</string>
+    <string name="content">प्रकरण</string>
+    <string name="Logout">लोग आउट</string>
+    <!-- MENU-->
+
+
+    <!--DASHBOARD DETAIL-->
+    <string name="thisMonth">इस महीने</string>
+    <string name="notification">संदेश</string>
+    <string name="pushnotification">नोटिफिकेशन</string>
+    <string name="pendingTask">आज का लंबित कार्य</string>
+    <string name="today">आज का दिन</string>
+    <string name="calender">कैलेंडर</string>
+    <string name="appointtaskAndEvents">अपॉइंटमेंट्स,कार्य और घटनाएँ</string>
+    <!--DASHBOARD DETAIL-->
+
+    <!--TASK-->
+    <string name="task">नया कार्य</string>
+    <string name="createNewTask">कार्य जोड़ें</string>
+    <string name="editTask">कार्य संपादित करें </string>
+    <string name="selectDate">तारीख़ चुनें </string>
+    <string name="taskTitle">कार्य का शीर्षक </string>
+    <string name="selectDateError">कृपया कार्य दिनांक का चयन करें </string>
+    <string name="selectTitleError">कृपया कार्य शीर्षक दर्ज करें</string>
+    <!--TASK-->
+
+    <!--Profile-->
+    <string name="patientid">रोगी आईडी</string>
+    <string name="patient_name">रोगी का नाम</string>
+    <string name="gender">लिंग</string>
+    <string name="maritial_status">वैवाहिक स्थिति</string>
+    <string name="phone">फ़ोन</string>
+    <string name="email">ईमेल</string>
+    <string name="address">पता</string>
+    <string name="bloodgroup">रक्त समूह</string>
+    <string name="age">आयु</string>
+    <string name="weight">वजन</string>
+    <string name="guardian">अभिभावक का नाम</string>
+    <string name="month">महीने</string>
+    <string name="years">साल</string>
+    <string name="barcode">बारकोड</string>
+    <string name="qrcode">क्यू आर कोड</string>
+    <!--Profile-->
+
+    <!--ERRORS MSG-->
+    <string name="noInternetMsg">कोई इंटरनेट कनेक्शन नहीं मिला</string>
+    <string name="apiErrorMsg">एपीआई से प्रतिक्रिया प्राप्त करने में असमर्थ</string>
+    <string name="invalidPassword">अमान्य उपयोगकर्ता नाम/पासवर्ड </string>
+    <string name="invalidUsername">अमान्य ईमेल या उपयोगकर्ता प्रकार</string>
+    <string name="verificationMessage">System Error! You are using unregistered version.</string>
+    <!--ERRORS MSG-->
+
+    <!-- MSG-->
+    <string name="logoutMsg">क्या आप लॉग आउट करना चाहते हैं?</string>
+    <string name="deleteMsg">क्या आप हटाना चाहते हैं?</string>
+    <string name="deleteAppointmentmsg">क्या आप अपॉइंटमेंट् हटाना चाहते हैं?</string>
+    <string name="deleteNotificationmsg">क्या आप अधिसूचना हटाना चाहते हैं?</string>
+    <string name="noData">कोई डेटा नहीं मिला!</string>
+    <string name="notScheduled">अनुसूचित नहीं है</string>
+    <string name="ok">ठीक</string>
+    <string name="yes">हाँ</string>
+    <string name="no">नहीं</string>
+    <string name="blank"> </string>
+    <string name="cancel">निरस्त करना</string>
+    <string name="approve">मंजूर</string>
+    <string name="pending">लंबित</string>
+    <string name="approveby">अनुमोदित</string>
+    <!-- MSG-->
+
+    <!-- Download Content-->
+    <string name="shareddate">साझा तिथि</string>
+    <string name="validdate">तक वैध</string>
+    <string name="sharedby">द्वारा साझा किया गया</string>
+
+    <!-- Download Content-->
+
+    <!-- Appointment-->
+    <string name="appointmentprefix">APPN</string>
+    <string name="appointmentdetails">अपॉइंटमेंट्स डिटेल</string>
+    <string name="appoint_serial">अपॉइंटमेंट्स क्रम संख्या</string>
+    <string name="appointmentpriority">अपॉइंटमेंट्स प्राथमिकता</string>
+    <string name="appointmentdate">मिलने की तारीख</string>
+    <string name="appointments">अपॉइंटमेंट्स</string>
+    <string name="shift">पाली</string>
+    <string name="deleteNotification">सूचनाएं हटाएं</string>
+    <string name="slot">स्लॉट</string>
+    <string name="priority">प्राथमिकता</string>
+    <string name="noslot">कोई स्लॉट उपलब्ध नहीं है</string>
+    <string name="appointment_no">अपॉइंटमेंट्स संख्या</string>
+    <string name="deleteAppointment">अपॉइंटमेंट हटाएं</string>
+    <string name="doctor">चिकित्सक</string>
+    <string name="specialist">विशेषज्ञ</string>
+    <string name="checkup">चेक अप</string>
+    <string name="live_consultant">लाइव सलाहकार(वीडियो कॉन्फ्रेंस पर)</string>
+    <string name="message">संदेश</string>
+    <!-- Appointment-->
+
+    <!-- IPD and OPD -->
+    <string name="Title"> उपाधि </string>
+    <string name="opdid">OPD ID</string>
+    <string name="opdcheckupid">OPD Checkup ID</string>
+    <string name="OPDcheckup">OPD Checkups</string>
+    <string name="dose_interval">खुराक अंतराल</string>
+    <string name="dose_duration">खुराक अवधि</string>
+    <string name="createNewTimeline"> टाइमलाइन जोड़ें</string>
+    <string name="diagnosis">डायग्नोसिस</string>
+    <string name="labinvestigation">लैब जांच</string>
+    <string name="treatmenthistory">उपचार इतिहास</string>
+    <string name="timeline">समय</string>4
+    <string name="previous_patient">पिछला रोगी</string>
+    <string name="ChequeNo">चेक नंबर</string>
+    <string name="result">परिणाम</string>
+    <string name="fromDate">तारीख से</string>
+    <string name="toDate">तारीख तक</string>
+    <string name="document">दस्तावेज</string>
+    <string name="component_issue">घटक मुद्दे</string>
+    <string name="bed_history">बिस्तर इतिहास</string>
+    <string name="vitals">वाइटल </string>
+    <string name="prev_obs_history">प्रीवियस ओब्स्टेट्रिक  हिस्ट्री  </string>
+    <string name="post_history">पोस्टनेटल  हिस्ट्री </string>
+    <string name="antenatal">जन्म पूर्व</string>
+    <string name="antenatalfindings">प्रसवपूर्व निष्कर्ष</string>
+    <string name="prescription">प्रिस्क्रिप्शन </string>
+    <string name="ipd_prescription">IPD प्रिस्क्रिप्शन </string>
+    <string name="opdprefix">OPDP</string>
+    <string name="ipdprefix">IPDP</string>
+    <string name="ipdnoprefix">IPDN</string>
+    <string name="consultantDoctor">कंसलटेंट  डॉक्टर </string>
+    <string name="dose">ख़ुराक</string>
+    <string name="pay">भुगतान </string>
+    <string name="tpa">TPA</string>
+    <string name="tpaId">TPA ID</string>
+    <string name="tpaValidity">TPA Validity</string>
+    <string name="discharg">डिस्चार्ज </string>
+    <string name="previous_ipd">प्रीवियस  IPD</string>
+    <string name="payment_type">भुगतान प्रकार</string>
+    <string name="charge">चार्ज</string>
+    <string name="payment">भुगतान</string>
+    <string name="bill">बिल</string>
+    <string name="billno">बिल नं</string>
+    <string name="prescriptionno">पर्ची नं</string>
+    <string name="dosage">Dosage</string>
+    <string name="chargetype">चार्ज का प्रकार</string>
+    <string name="StandardCharges">मानक चार्ज</string>
+    <string name="tpaCharges">टीपीए चार्ज</string>
+    <string name="totalcharges">कुल चार्ज</string>
+    <string name="grosstotal">सकल कुल (शेष राशि)</string>
+    <string name="grosstotalbalance">सकल कुल</string>
+    <string name="totalpayments">कुल भुगतान</string>
+    <string name="othercharges">अन्य चार्ज</string>
+    <string name="netpayable">नेट देय राशि</string>
+    <string name="netpayablepaid">नेट देय राशि(भुगतान)</string>
+    <string name="billsummary">बिल सारांश</string>
+    <string name="MakePayment">भुगतान करे</string>
+    <string name="Discharg_date">डिस्चार्ज तारीख</string>
+    <string name="dischargd">डिस्चार्ज</string>
+    <string name="Admission_date">प्रवेश तारीख</string>
+    <string name="dischargedsummary">डिस्चार्ज समरी </string>
+    <string name="Tax">टैक्स</string>
+    <string name="netamount">निवल राशि</string>
+    <string name="discount">डिस्काउंट</string>
+    <string name="Total">कुल रकम</string>
+    <string name="opdno">ओपीडी नं</string>
+    <string name="ipdno">आईपीडी NO.</string>
+    <string name="Discharged">डिस्चार्ज</string>
+    <string name="bed">बिस्तर</string>
+    <string name="due_payment">बकाया भुगतान</string>
+    <string name="credit_limt">क्रेडिट सीमा</string>
+    <string name="referenceDoctor">संदर्भ चिकित्सक</string>
+    <string name="symptoms">लक्षण</string>
+    <string name="description">वर्णन</string>
+    <string name="ChargeCategory">चार्ज की श्रेणी</string>
+    <string name="chargename">चार्ज नाम</string>
+    <string name="place_delivery">डिलिवरी का स्थान</string>
+    <string name="pregnancy_duration">गर्भावस्था की अवधि</string>
+    <string name="pregnancy_complication">गर्भावस्था या प्रसवपूर्व जटिलताएँ</string>
+    <string name="birth_weight">जन्म के समय वजन</string>
+    <string name="infant_feeding">शिशु आहार</string>
+    <string name="birth_status">जन्म स्थिति</string>
+    <string name="alive_death_date">जीवित/मृत्यु तिथि</string>
+    <string name="death_cause">मौत का कारण</string>
+    <string name="prev_med_history">पिछला चिकित्सा इतिहास</string>
+    <string name="spec_instr">विशेष निर्देश</string>
+    <string name="labour_time">श्रम का समय</string>
+    <string name="delivery_time">डिलीवरी का समय</string>
+    <string name="routine_question">नियमित प्रश्न</string>
+    <string name="general_remark">सामान्य टिप्पणी</string>
+    <string name="opd_ipd_no">OPD/IPD No</string>
+    <string name="bleeding">ब्लीडिंग</string>
+    <string name="headache">सिरदर्द</string>
+    <string name="pain">दर्द</string>
+    <string name="constipation">कब्ज़</string>
+    <string name="vomiting">उल्टी</string>
+    <string name="cough">खाँसी</string>
+    <string name="vaginal">वैजिनल </string>
+    <string name="height">ऊंचाई</string>
+    <string name="oedema">सूजन</string>
+    <string name="condition">स्थिति</string>
+    <string name="specialfindingsremark">विशेष निष्कर्ष और टिप्पणियाँ</string>
+    <string name="pelvicexamination">पेल्विक परीक्षा</string>
+    <string name="sp">SP</string>
+    <string name="primary_examine">प्राथमिक जांच</string>
+    <string name="antenatal_examine">प्रसवपूर्व जांच</string>
+    <string name="uter_size">गर्भाशय का आकार</string>
+    <string name="uterus_size">गर्भाशय का आकार</string>
+    <string name="presentation_position">प्रस्तुति स्थिति</string>
+    <string name="presenting_part_brim">  प्रेसेंटिंग पार्ट ब्रिम</string>
+    <string name="foeta_heart">भ्रूण हृदय</string>
+    <string name="blood_pressure">Blood Pressure</string>
+    <string name="antenatal_weight">प्रसव पूर्व वजन</string>
+    <string name="antenatal_oedema">प्रसव पूर्व सूजन</string>
+    <string name="urine">यूरिन</string>
+    <string name="urine_aaibumen">यूरिन एल्बुमिन</string>
+    <string name="nextvisit">अगली विजिट </string>
+    <string name="IPDPatient">IPD</string>
+    <string name="ipd_Patient">IPD Patient</string>
+    <!-- IPD and OPD -->
+
+
+    <!-- Pathology, Radiology and Pharmacy -->
+    <string name="pathologyprefix">PATB</string>
+    <string name="pharmacyprefix">PHAB</string>
+    <string name="radiologyprefix">RADB</string>
+    <string name="reportdetails">रिपोर्ट डिटेल्स</string>
+    <string name="billdetails">बिल डिटेल्स</string>
+    <string name="unit">मात्रक</string>
+    <string name="admin">व्यवस्थापक</string>
+    <string name="date">दिनांक</string>
+    <string name="ottechnician">OT Technician</string>
+    <string name="inst_date">अनुदेश दिनांक</string>
+    <string name="Instruction">अनुदेश</string>
+    <string name="medicinecategory">चिकित्सा श्रेणी</string>
+    <string name="consultant">सलाहकार रजिस्टर</string>
+    <string name="consultants">सलाहकार</string>
+    <string name="awaited">प्रतीक्षा</string>
+    <string name="cancelled">रद्द</string>
+    <string name="finished">समाप्त</string>
+    <string name="createdby">द्वारा बनाई</string>
+    <string name="vital_parameter">Vital Parameter</string>
+    <string name="createdfor">के लिए बनाया</string>
+    <string name="reportingdate">सूचना देने की नियत तिथि</string>
+    <string name="testname">परीक्षण का नाम</string>
+    <string name="shortname">संक्षिप्त नाम</string>
+    <string name="appliedcharge">शुल्क</string>
+    <string name="quantity">मात्रा</string>
+    <string name="value">मूल्य</string>
+    <string name="remark">टिप्पणी</string>
+    <string name="reference">संदर्भ</string>
+    <string name="referencerange">संदर्भ रेंज</string>
+    <string name="batch">बैच नम्बर</string>
+    <string name="note">नोट</string>
+    <string name="expirydate">समाप्ति तिथि</string>
+    <string name="medname">दवा का नाम</string>
+    <string name="testparameter">परीक्षण पैरामीटर नाम</string>
+    <string name="medicine">दवा</string>
+    <string name="paymentmode">भुगतान का प्रकार</string>
+    <string name="paidamount">जमा राशि</string>
+    <string name="invest_date">जांच की तारीख</string>
+    <string name="invest">जांच</string>
+    <string name="findings">निष्कर्षों</string>
+    <string name="caseid">केस आईडी</string>
+    <string name="total_tax">कुल कर</string>
+    <string name="balance_amount">शेष राशि</string>
+    <string name="medication">दवा</string>
+    <string name="Overview">अवलोकन</string>
+    <string name="technician">तकनीशियन</string>
+    <string name="lab">प्रयोगशाला</string>
+    <string name="samplecollected">नमूना एकत्र</string>
+    <string name="expecteddate">अपेक्षित तिथि</string>
+    <string name="uploaddate">अपलोड तिथि</string>
+    <string name="comment">टिप्पणी</string>
+    <string name="ChequeDate">चेक तिथि</string>
+    <string name="totaldiposit">कुल जमा</string>
+    <string name="totaltax">कुल कर</string>
+    <string name="refundamount">रिफंड राशि</string>
+    <string name="dueamount">देय राशि</string>
+    <!-- Pathology, Radiology and Pharmacy -->
+
+
+    <!-- Operation Theatre,Ambulance and Blood Bank -->
+    <string name="Issuedate">जारी करने की तिथि</string>
+    <string name="bloodissuedetail">रक्त निर्गम विवरण</string>
+    <string name="componentissuedetail">घटक निर्गम विवरण</string>
+    <string name="bloodbankprefix">BLBB</string>
+    <string name="component">घटक</string>
+    <string name="donor">दाता का नाम</string>
+    <string name="Operationdate">ऑपरेशन की तारीख</string>
+    <string name="operationname">ऑपरेशन का नाम</string>
+    <string name="operation">ऑपरेशन</string>
+    <string name="drivername">ड्राइवर का नाम</string>
+    <string name="drivercontact">ड्राइवर फोन नंबर</string>
+    <string name="AmbulanceBill">एम्बुलेंस बिल</string>
+    <string name="operationtype">ऑपरेशन का प्रकार</string>
+    <string name="vehiclemodel">वाहन मॉडल</string>
+    <string name="vehicleno">वाहन नंबर</string>
+    <string name="contact">फोन नंबर</string>
+    <string name="amount">राशि</string>
+    <string name="bagno">बैग नंबर</string>
+    <string name="operation_theatre">ऑपरेशन थेराट्रे</string>
+    <string name="ot_details">ऑपरेशन विवरण</string>
+    <string name="lab_investigation">लैब जांच</string>
+    <string name="nurse_note">नर्स नोट</string>
+    <string name="Name">नाम</string>
+    <string name="transaction">ट्रांजेक्शन आईडी</string>
+    <string name="take_photo">कैमरे से फोटो लें</string>
+    <string name="choose_from_gallery">गैलरी से चुनें</string>
+    <string name="submit_success">सफलतापूर्वक सबमिट</string>
+    <string name="operationcategory">Operation Category</string>
+    <string name="deleteall">डिलीट</string>
+    <string name="transactionprefix">TRID</string>
+    <!-- Operation Theatre,Ambulance and Blood Bank -->
+
+
+    <!--OTHERS-->
+    <string name="toDo">कार्य सूची</string>
+    <string name="report">रिपोर्ट</string>
+    <string name="patient">रोगी</string>
+    <string name="time">समय</string>
+    <string name="patienttype">रोगी प्रकार</string>
+    <string name="view">विवरण देखें</string>
+    <string name="join">जोड़ें</string>
+    <string name="status">स्थति</string>
+    <string name="visit">दौरा</string>
+    <string name="treatment">घर पर उपचार</string>
+    <string name="Consultant">सलाहकार</string>
+    <string name="opdipd">ओपीडी/आईपीडी नं</string>
+    <string name="name">रोगी का नाम</string>
+    <string name="price">कीमत</string>
+    <string name="bp">बीपी</string>
+    <string name="download">सभी डाउनलोड पूर्ण</string>
+    <string name="patientpanelstatus">रोगी पैनल अक्षम है</string>
+    <!--OTHERS-->
+
+
+    <!--ABOUT-->
+    <string name="hospitalCode">अस्पताल कोड</string>
+    <string name="version">Version 3.0</string>
+    <string name="username_error">कृपया उपयोगकर्ता नाम दर्ज करें</string>
+    <string name="password_error">कृपया पासवर्ड दर्ज करें</string>
+
+    <!--ABOUT-->
+
+</resources>

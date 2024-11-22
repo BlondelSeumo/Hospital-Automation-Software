@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/ic_home_black_24dp"
+        android:title="@string/home" />
+
+    <item
+        android:id="@+id/navigation_opd"
+        android:icon="@drawable/ic_opd_new"
+        android:title="@string/OPD" />
+
+    <item
+        android:id="@+id/navigation_pharmacy"
+        android:icon="@drawable/ic_pharmacy_new"
+        android:title="@string/Pharmacy" />
+
+    <item
+        android:id="@+id/navigation_pathology"
+        android:icon="@drawable/ic_pathology_new"
+        android:title="@string/Pathology" />
+
+    <item
+        android:id="@+id/navigation_radiology"
+        android:icon="@drawable/ic_radiology_new"
+        android:title="@string/Radiology" />
+
+</menu>

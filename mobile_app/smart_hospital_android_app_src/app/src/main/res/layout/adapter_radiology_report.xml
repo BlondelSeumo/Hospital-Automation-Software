@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:focusable="true"
+    android:focusableInTouchMode="false"
+    android:clickable="true"
+    android:background="@android:drawable/list_selector_background"
+    android:orientation="vertical"
+    >
+    <LinearLayout
+        android:id="@+id/adapter_patient_radiology_detailLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="5"
+        android:padding="5dp"
+        >
+
+        <TextView
+            android:id="@+id/testparameter"
+            android:layout_width="0dp"
+            android:layout_weight="1.5"
+            android:layout_height="wrap_content"
+            android:text="@string/empty"
+            android:paddingStart="5dp"
+            android:textColor="@color/textHeading"
+            android:textSize="@dimen/secondaryText"/>
+
+        <TextView
+            android:id="@+id/expecteddate"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="@string/empty"
+            android:gravity="center"
+            android:textColor="@color/textHeading"
+            android:textSize="@dimen/secondaryText"/>
+
+        <TextView
+            android:id="@+id/uploaddate"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="@string/empty"
+            android:gravity="center"
+            android:textColor="@color/textHeading"
+            android:textSize="@dimen/secondaryText"/>
+        <TextView
+            android:id="@+id/amount"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="@string/empty"
+            android:gravity="center"
+            android:textColor="@color/textHeading"
+            android:textSize="@dimen/secondaryText"
+            android:layout_marginEnd="5dp"
+            />
+        <LinearLayout
+            android:id="@+id/adapter_downloadBtn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:layout_alignParentEnd="true"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:src="@drawable/ic_nav_download"
+                android:layout_margin="5dp" />
+
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/result_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="5dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/result"
+            android:paddingStart="5dp"
+            android:textStyle="bold"
+            android:textColor="@color/textHeading"
+            android:textSize="@dimen/secondaryText"/>
+
+        <TextView
+            android:id="@+id/result"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/empty"
+            android:layout_marginStart="10dp"
+            android:textColor="@color/textHeading"
+            android:textSize="@dimen/secondaryText"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.4dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/seperatorline"
+        />
+</LinearLayout>

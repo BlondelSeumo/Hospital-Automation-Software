@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".AboutHospital">
+
+    <FrameLayout
+        android:id="@+id/actionBarSecondary"
+        android:layout_width="match_parent"
+        android:layout_height="56dp">
+
+        <RelativeLayout android:layout_width="fill_parent"
+            android:layout_height="56dp">
+
+            <ImageView
+                android:id="@+id/actionBar_backBtn"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/ic_back"
+                android:layout_gravity="start"
+                android:padding="19dp"/>
+
+            <TextView
+                android:id="@+id/actionBar_title"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/actionBar_backBtn"
+                android:layout_marginStart="10dp"
+                android:scaleType="fitXY"
+                android:adjustViewBounds="true"
+                android:textSize="@dimen/heading"
+                android:textColor="@color/white"
+                android:gravity="center_vertical" />
+
+        </RelativeLayout>
+
+    </FrameLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/CustomCardView">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/about_nameLay"
+                android:layout_width="match_parent"
+                android:layout_height="70dp">
+
+
+
+                <TextView
+                    android:id="@+id/about_nameTV"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/empty"
+                    android:gravity="center_vertical"
+                    android:textSize="@dimen/primaryText"
+                    android:textStyle="bold"
+                    android:layout_marginStart="5dp"
+                    android:textColor="@color/textHeading"
+                     />
+
+            </RelativeLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="@string/address"
+                android:padding="5dp"
+                android:textSize="@dimen/secondaryText"
+                android:textStyle="bold"
+                android:textColor="@color/textHeading" />
+            <TextView
+                android:id="@+id/about_addressTV"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/empty"
+                android:textSize="@dimen/secondaryText"
+                android:gravity="center_vertical"
+                android:textStyle="bold"
+                android:padding="5dp"
+                android:textColor="@color/textHeading"/>
+        </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="2"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/phone"
+                    android:padding="5dp"
+                    android:textSize="@dimen/secondaryText"
+                    android:textStyle="bold"
+                    android:textColor="@color/textHeading" />
+                <TextView
+                    android:id="@+id/about_phoneTV"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/empty"
+                    android:textSize="@dimen/secondaryText"
+                    android:gravity="center_vertical"
+                    android:textStyle="bold"
+                    android:padding="5dp"
+                    android:textColor="@color/textHeading"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="2"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/email"
+                    android:padding="5dp"
+                    android:textSize="@dimen/secondaryText"
+                    android:textStyle="bold"
+                    android:textColor="@color/textHeading" />
+
+                <TextView
+                    android:id="@+id/about_emailTV"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/empty"
+                    android:textSize="@dimen/secondaryText"
+                    android:gravity="center_vertical"
+                    android:textStyle="bold"
+                    android:padding="5dp"
+                    android:textColor="@color/textHeading"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="2"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/hospitalCode"
+                    android:padding="5dp"
+                    android:textSize="@dimen/secondaryText"
+                    android:textStyle="bold"
+                    android:textColor="@color/textHeading" />
+
+
+                <TextView
+                    android:id="@+id/about_hospitalCodeTV"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/empty"
+                    android:textSize="@dimen/secondaryText"
+                    android:gravity="center_vertical"
+                    android:textStyle="bold"
+                    android:padding="5dp"
+                    android:textColor="@color/textHeading"/>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

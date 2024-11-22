@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/adapter_patient_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/adapter_patient_Icon"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_alignParentStart="true"
+                android:src="@drawable/medical_appointment"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="10dp" />
+
+            <TextView
+                android:id="@+id/adapter_patient_AppointTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/primaryText"
+                android:textStyle="bold"
+                android:textColor="@color/textHeading"
+                android:gravity="start|center"
+                android:layout_toEndOf="@id/adapter_patient_Icon"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:paddingStart="5dp"
+                android:paddingEnd="5dp" />
+
+            <TextView
+                android:id="@+id/adapter_patient_appointDateTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/adapter_patient_Icon"
+                android:layout_below="@+id/adapter_patient_AppointTV"
+                android:layout_toStartOf="@+id/adapter_patient_layout"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:paddingStart="5dp"
+                android:paddingEnd="5dp"
+                android:textSize="@dimen/secondaryText"
+               android:layout_marginBottom="5dp"
+                android:textStyle="bold"
+                android:textColor="@color/textHeading"
+                android:text="-" />
+
+            <LinearLayout
+                android:id="@+id/adapter_patient_layout"
+                android:layout_width="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp">
+
+                <TextView
+                    android:id="@+id/adapter_patient_status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text=""
+                    android:background="@drawable/orange_border"
+                    android:padding="3dp"
+                    android:textSize="@dimen/secondaryText"
+                    android:textColor="@color/white" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+

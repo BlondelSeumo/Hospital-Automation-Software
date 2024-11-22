@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    android:id="@+id/adapter_patient_opd_viewContainer"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    style="@style/CustomCardView">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible">
+
+        <RelativeLayout
+            android:id="@+id/adapter_patient_ipd_headLayout"
+            android:layout_width="match_parent"
+            android:padding="5dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/adapter_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="start|center"
+                android:paddingStart="5dp"
+                android:layout_marginTop="5dp"
+                android:text="-"
+                android:textColor="@color/textHeading"
+                android:textSize="@dimen/secondaryText"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:id="@+id/adapter_patient_opd_detailsBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:background="@drawable/green_border">
+
+                <TextView
+                    android:id="@+id/adapter_amount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="-"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/secondaryText"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+        </RelativeLayout>
+        <LinearLayout
+            android:id="@+id/linear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:baselineAligned="false"
+            android:weightSum="2"
+            android:paddingStart="5dp"
+            android:layout_below="@+id/adapter_patient_ipd_headLayout">
+
+            <LinearLayout
+
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:baselineAligned="false"
+                android:weightSum="2"
+                android:layout_below="@+id/adapter_patient_opd_headLayout">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/transaction"
+                    android:textStyle="bold"
+                    android:layout_marginRight="5dp"
+                    android:textColor="@color/textHeading"
+                    android:textSize="@dimen/secondaryText"/>
+
+                <TextView
+                    android:id="@+id/adapter_transactionid"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/empty"
+                    android:textColor="@color/textHeading"
+                    android:textSize="@dimen/secondaryText" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/mode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="5dp"
+            android:layout_below="@+id/linear"
+            android:weightSum="2">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="5dp"
+                android:paddingStart="5dp"
+                android:text="@string/paymentmode"
+                android:textColor="@color/textHeading"
+                android:textSize="@dimen/secondaryText"
+                android:layout_marginRight="5dp"
+                android:textStyle="bold" />
+            <LinearLayout
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="10dp"
+                android:weightSum="2">
+                <TextView
+                    android:id="@+id/paymentmode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="-"
+                    android:textColor="@color/textHeading"
+                    android:textSize="@dimen/secondaryText" />
+                <TextView
+                    android:id="@+id/chequeno"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="-"
+                    android:textColor="@color/textHeading"
+                    android:textSize="@dimen/secondaryText" />
+                <TextView
+                    android:id="@+id/chequedate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="-"
+                    android:textColor="@color/textHeading"
+                    android:textSize="@dimen/secondaryText" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/attachment_layout"
+                android:layout_width="20dp"
+                android:layout_height="23dp"
+                android:layout_marginLeft="10dp"
+                android:orientation="vertical"
+                android:visibility="gone"
+                android:weightSum="2">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:background="@drawable/ic_nav_download"
+                    android:tint="@color/highlight" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:baselineAligned="false"
+            android:weightSum="2"
+            android:layout_below="@+id/mode"
+            android:paddingStart="5dp"
+           >
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:weightSum="2"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/note"
+                    android:textStyle="bold"
+                    android:layout_marginRight="5dp"
+                    android:textColor="@color/textHeading"
+                    android:textSize="@dimen/secondaryText"/>
+
+                <TextView
+                    android:id="@+id/note"
+                    android:layout_width="wrap_content"
+                    android:text="@string/empty"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/textHeading"
+                    android:textSize="@dimen/secondaryText" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

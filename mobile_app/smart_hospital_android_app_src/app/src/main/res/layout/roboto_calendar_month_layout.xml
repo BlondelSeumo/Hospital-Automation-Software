@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/robotoCalendarDateTitleContainer"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorAccent"
+    android:clickable="true">
+
+    <ImageView
+        android:id="@+id/rightButton"
+        style="@style/RobotoCalendarMonthArrow"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_margin="10dp"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        app:srcCompat="@drawable/ic_arrow_right" />
+
+    <TextView
+        android:id="@+id/monthText"
+        style="@style/RobotoCalendarMonthText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="false"
+        android:layout_centerInParent="true"
+        android:tag="dateTitle"
+        android:text="MONTH YEAR"
+        android:textSize="@dimen/primaryText"
+        android:textStyle="bold"
+        android:textColor="@color/textHeading"
+        android:textAllCaps="true" />
+
+    <ImageView
+        android:id="@+id/leftButton"
+        style="@style/RobotoCalendarMonthArrow"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:layout_margin="10dp"
+        app:srcCompat="@drawable/ic_arrow_left" />
+
+</RelativeLayout>

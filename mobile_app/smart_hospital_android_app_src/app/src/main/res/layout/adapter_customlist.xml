@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/adapter_report_card_exam_list"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/field_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:paddingRight="10dp"
+                android:paddingLeft="15dp"
+                android:textStyle="bold"
+                android:textColor="@color/textHeading" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:weightSum="2">
+
+            <LinearLayout
+                android:id="@+id/input_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:visibility="gone"
+                android:paddingLeft="5dp"
+                android:orientation="vertical"
+                android:gravity="start"
+                >
+
+                <EditText
+                    android:id="@+id/inputET"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_margin="5dp"
+                    android:text=""
+                    android:paddingLeft="10dp"
+                    android:textSize="12sp"
+                    android:singleLine="true"
+                    android:background="@drawable/grey_outline"
+                    android:textColor="@color/textHeading"
+                    android:gravity="center_vertical"/>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/textarea_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:visibility="gone"
+                android:paddingLeft="5dp"
+                android:orientation="vertical"
+                android:gravity="start"
+                >
+
+                <EditText
+                    android:id="@+id/textareaET"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_margin="5dp"
+                    android:text=""
+                    android:paddingLeft="10dp"
+                    android:textSize="12sp"
+                    android:background="@drawable/grey_outline"
+                    android:textColor="@color/textHeading"
+                    android:gravity="center_vertical"/>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/checkbox_layout"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:visibility="gone"
+                android:orientation="horizontal">
+                <CheckBox
+                    android:id="@+id/checkup_yes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="YES"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"/>
+                <CheckBox
+                    android:id="@+id/checkup_no"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="NO"
+                    android:layout_marginLeft="10dp"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

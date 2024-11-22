@@ -1,0 +1,411 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PatientAddAppoinment"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/addappoint_dialog_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <ImageView
+            android:id="@+id/addTask_dialog_calenderIcon"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentStart="true"
+            android:src="@drawable/appointment_white"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_toEndOf="@id/addTask_dialog_calenderIcon"
+            android:gravity="start|center"
+            android:minHeight="40dp"
+            android:padding="5dp"
+            android:text="@string/addAppoinments"
+            android:textColor="@color/white"
+            android:textSize="@dimen/primaryText"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/dialog_crossIcon"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/ic_close"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:padding="5dp"
+            android:tint="@color/white" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <RelativeLayout
+                            android:id="@+id/layoutBottom"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            >
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:layout_margin="10dp"
+                                android:padding="5dp">
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginRight="10dp"
+                                    android:padding="5dp"
+                                    android:gravity="center"
+                                    android:text="Login/Register"
+                                    android:textColor="@color/textHeading"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="10dp"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="10dp"
+                                        android:layout_marginRight="10dp"
+                                        android:padding="5dp"
+                                        android:text="Patient Appointment"
+                                        android:textColor="@color/textHeading"
+                                        android:textStyle="bold" />
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="10dp">
+                                        <RadioGroup
+                                            android:id="@+id/radiogroup"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:orientation="horizontal"
+                                            >
+                                            <RadioButton
+                                                android:id="@+id/new_radioButton"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:text="New Patient"/>
+                                            <RadioButton
+                                                android:id="@+id/old_radioButton"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:text="Old Patient"/>
+                                        </RadioGroup>
+                                    </LinearLayout>
+                                </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/newPatient_layout"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical"
+                                android:layout_marginTop="10dp">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="10dp"
+                                        android:layout_marginRight="10dp"
+                                        android:padding="5dp"
+                                        android:text="@string/name"
+                                        android:textColor="@color/textHeading"
+                                        android:textStyle="bold" />
+
+                                    <EditText
+                                        android:id="@+id/name"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="10dp"
+                                        android:layout_marginRight="10dp"
+                                        android:textSize="@dimen/secondaryText"
+                                        android:text=""
+                                        android:background="@drawable/grey_outline"
+                                        android:padding="10dp" />
+                                </LinearLayout>
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="10dp"
+                                        android:layout_marginTop="10dp"
+                                        android:layout_marginRight="10dp"
+                                        android:padding="5dp"
+                                        android:text="@string/email"
+                                        android:textColor="@color/textHeading"
+                                        android:textStyle="bold" />
+
+                                    <EditText
+                                        android:id="@+id/email"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="10dp"
+                                        android:layout_marginRight="10dp"
+                                        android:textSize="@dimen/secondaryText"
+                                        android:text=""
+                                        android:background="@drawable/grey_outline"
+                                        android:padding="10dp" />
+                                </LinearLayout>
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="10dp"
+                                        android:layout_marginTop="10dp"
+                                        android:layout_marginRight="10dp"
+                                        android:padding="5dp"
+                                        android:text="@string/gender"
+                                        android:textColor="@color/textHeading"
+                                        android:textStyle="bold" />
+
+                                    <Spinner
+                                        android:id="@+id/gender"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="40dp"
+                                        android:layout_marginLeft="10dp"
+                                        android:layout_marginRight="10dp"
+                                        android:background="@drawable/grey_outline"
+                                        android:textSize="@dimen/secondaryText" />
+                                </LinearLayout>
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="10dp"
+                                        android:layout_marginTop="10dp"
+                                        android:layout_marginRight="10dp"
+                                        android:padding="5dp"
+                                        android:text="@string/phone"
+                                        android:textColor="@color/textHeading"
+                                        android:textStyle="bold" />
+
+                                    <EditText
+                                        android:id="@+id/phone"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="10dp"
+                                        android:layout_marginRight="10dp"
+                                        android:inputType="number"
+                                        android:textSize="@dimen/secondaryText"
+                                        android:text=""
+                                        android:background="@drawable/grey_outline"
+                                        android:padding="10dp" />
+                                </LinearLayout>
+                            </LinearLayout>
+
+
+
+
+                                <LinearLayout
+                                    android:id="@+id/oldPatient_layout"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:visibility="gone"
+                                    android:orientation="vertical">
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="vertical">
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="10dp"
+                                        android:layout_marginTop="10dp"
+                                        android:layout_marginRight="10dp"
+                                        android:padding="5dp"
+                                        android:text="@string/userNameHint"
+                                        android:textColor="@color/textHeading"
+                                        android:textStyle="bold" />
+
+
+                                        <LinearLayout
+                                            android:id="@+id/layout_username_login"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="40dp"
+                                            android:layout_marginTop="20dp"
+                                            android:layout_marginStart="20dp"
+                                            android:layout_marginEnd="20dp"
+                                            android:background="@drawable/edittext_stlye"
+                                            android:gravity="center">
+
+                                            <ImageView
+                                                android:id="@+id/icon_username_login"
+                                                android:layout_width="20dp"
+                                                android:layout_height="20dp"
+                                                android:src="@drawable/ic_user"
+                                                android:layout_marginEnd="10dp"
+                                                android:layout_marginStart="10dp" />
+
+                                            <EditText
+                                                android:id="@+id/username"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="match_parent"
+                                                android:background="@color/transparent"
+                                                android:hint="@string/userNameHint"
+                                                android:inputType="text"
+                                                android:singleLine="true"
+                                                android:textColor="@color/textHeading"
+                                                android:textColorHint="@color/hintDark"
+                                                android:textSize="15sp" />
+
+                                        </LinearLayout>
+                                    </LinearLayout>
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="vertical">
+
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="10dp"
+                                            android:layout_marginTop="10dp"
+                                            android:layout_marginRight="10dp"
+                                            android:padding="5dp"
+                                            android:text="@string/userPasswordHint"
+                                            android:textColor="@color/textHeading"
+                                            android:textStyle="bold" />
+-->
+                                        <RelativeLayout
+                                            android:id="@+id/passwordLayout"
+                                            android:layout_width="fill_parent"
+                                            android:layout_height="40dp"
+                                            android:layout_below="@id/layout_username_login"
+                                            android:layout_marginTop="10dp"
+                                            android:layout_marginStart="20dp"
+                                            android:layout_marginEnd="20dp"
+                                            android:background="@drawable/edittext_stlye">
+
+                                            <ImageView
+                                                android:id="@+id/icon_password_login"
+                                                android:layout_width="20dp"
+                                                android:layout_height="20dp"
+                                                android:src="@drawable/ic_lock_filled"
+                                                android:layout_centerVertical="true"
+                                                android:layout_marginEnd="10dp"
+                                                android:layout_marginStart="10dp" />
+
+                                            <EditText
+                                                android:id="@+id/password"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="match_parent"
+                                                android:hint="@string/userPasswordHint"
+                                                android:textColorHint="@color/hintDark"
+                                                android:textSize="@dimen/primaryText"
+                                                android:textColor="@color/textHeading"
+                                                android:singleLine="true"
+                                                android:inputType="textPassword"
+                                                android:typeface="sans"
+                                                android:fontFamily="sans-serif"
+                                                android:layout_marginEnd="50dp"
+                                                android:background="#01000000"
+                                                android:layout_toEndOf="@+id/icon_password_login" />
+
+                                            <ImageView
+                                                android:id="@+id/login_password_visibleBtn"
+                                                android:layout_width="30dp"
+                                                android:layout_height="30dp"
+                                                android:src="@drawable/eye_grey"
+                                                android:layout_alignParentEnd="true"
+                                                android:layout_centerVertical="true"
+                                                android:layout_marginEnd="10dp"
+                                                android:padding="5dp" />
+
+                                        </RelativeLayout>
+                                    </LinearLayout>
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+
+                        </RelativeLayout>
+
+
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginEnd="15dp"
+                        android:layout_marginStart="15dp"
+                        android:padding="10dp">
+                        <Button
+                            android:id="@+id/save_patient_appoinment"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:background="@color/colorPrimary"
+                            android:text="@string/addAppoinments"
+                            android:textColor="#FFFFFF"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

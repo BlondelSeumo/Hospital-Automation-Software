@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/adapter_report_card_exam_list"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+  ><LinearLayout
+    android:id="@+id/sym_layout"
+    android:layout_weight="1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/linear_layout"
+    android:padding="5dp"
+    android:weightSum="2"
+    android:layout_marginBottom="5dp"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/staffcomment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text=""
+        android:layout_marginRight="5dp"
+        android:textColor="@color/textHeading"
+        android:textSize="@dimen/secondaryText"
+       />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:weightSum="2"
+        android:gravity="end"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="--"
+            android:gravity="end"
+            android:textColor="@color/textHeading"
+            android:textSize="@dimen/secondaryText" />
+        <TextView
+            android:id="@+id/staffname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="--"
+            android:gravity="end"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/textHeading"
+            android:textSize="@dimen/secondaryText" />
+
+    </LinearLayout>
+
+
+</LinearLayout>
+</LinearLayout>

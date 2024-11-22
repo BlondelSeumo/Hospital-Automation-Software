@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "638451868970",
+    "project_id": "smarthospital2024-a6a22",
+    "storage_bucket": "smarthospital2024-a6a22.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:638451868970:android:b5ce17f2d3e6ac910a6a53",
+        "android_client_info": {
+          "package_name": "com.qdocs.smarthospital24"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDxBXgTio7Mnps-nNqKike0DezoVeAauQo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

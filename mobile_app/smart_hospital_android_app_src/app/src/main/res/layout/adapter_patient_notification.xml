@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".adapters.PatientNotificationAdapter">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/patientNotificationAdapter_viewContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/CustomCardView">
+
+        <LinearLayout
+            android:id="@+id/mainlayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="5dp">
+
+            <TextView
+                android:id="@+id/patientNotificationAdapter_titleTV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/textHeading"
+                android:textStyle="bold"
+                android:gravity="center_vertical"
+                android:paddingTop="5dp"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:paddingBottom="5dp"
+                android:layout_marginBottom="5dp"
+                android:textSize="@dimen/primaryText" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/patientNotificationAdapter_dateHeaderTV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/date"
+                    android:textStyle="bold"
+                    android:textColor="@color/textHeading"
+                    android:textSize="@dimen/secondaryText"
+                    android:layout_marginStart="10dp"
+                    android:gravity="center_vertical"
+                    android:minHeight="30dp" />
+
+                <TextView
+                    android:id="@+id/NotificationAdapter_dateTV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minHeight="30dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/empty"
+                    android:layout_marginStart="10dp"
+                    android:textSize="@dimen/secondaryText"
+                    android:textColor="@color/textHeading"
+                    android:textStyle="bold"
+                    android:layout_toEndOf="@+id/patientNotificationAdapter_dateHeaderTV" />
+
+                <LinearLayout
+                    android:id="@+id/patientNotificationAdapter_viewBtn"
+                    android:layout_width="wrap_content"
+                    android:minWidth="70dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentEnd="true"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:background="@color/transparent">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/ic_view" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/view"
+                        android:textColor="@color/hyperLink"/>
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

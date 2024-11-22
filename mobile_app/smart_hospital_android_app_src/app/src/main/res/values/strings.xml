@@ -1,0 +1,379 @@
+<resources>
+    <string name="app_name">Smart Hospital</string>
+    <string name="empty"></string>
+
+    <!--TAKE URL PAGE-->
+    <string name="domainHead">Enter your hospital url</string>
+    <string name="submit">Submit</string>
+    <!--TAKE URL PAGE-->
+
+    <!--LOGIN PAGE -->
+    <string name="login">Login</string>
+    <string name="userNameHint">Username</string>
+    <string name="userPasswordHint">Password</string>
+    <string name="forgotPassword">Forgot Password?</string>
+    <string name="changeUrl">Change Domain</string>
+    <string name="privacyPolicy">Privacy Policy</string>
+    <!--LOGIN PAGE-->
+
+    <!--MENU-->
+    <string name="home">Home</string>
+    <string name="profile">Profile</string>
+    <string name="MyAppointments">My Appointments</string>
+    <string name="addAppoinments">Add Appointment</string>
+    <string name="bookAppoinments">Book Appointment </string>
+    <string name="successAppoinments">Appointment added successfully</string>
+    <string name="OPD">OPD</string>
+    <string name="opdid">OPD ID</string>
+    <string name="opdcheckupid">OPD Checkup ID</string>
+    <string name="OPDcheckup">OPD Checkups</string>
+    <string name="IPD">IPD</string>
+    <string name="Pharmacy">Pharmacy</string>
+    <string name="Pathology">Pathology</string>
+    <string name="Radiology">Radiology</string>
+    <string name="OperationTheatre">Operation Theatre </string>
+    <string name="Ambulance">Ambulance</string>
+    <string name="BloodBank">Blood Bank</string>
+    <string name="liveconsult">Live Consultation</string>
+    <string name="contentsharelist">Download Center</string>
+    <string name="content">Content</string>
+    <string name="about">About Hospital</string>
+    <string name="Logout">Logout</string>
+    <!-- MENU-->
+
+    <!--DASHBOARD DETAIL-->
+    <string name="thisMonth">This Month</string>
+    <string name="notification">Messages</string>
+    <string name="pushnotification">Notification</string>
+    <string name="pendingTask">My Pending Task</string>
+    <string name="today">Today\'s</string>
+    <string name="calender">Calender</string>
+    <string name="appointtaskAndEvents">Appointments, Task &amp; Events</string>
+    <!--DASHBOARD DETAIL-->
+
+
+    <!--TASK-->
+    <string name="task"> New Task </string>
+    <string name="createNewTask"> Add Task </string>
+    <string name="editTask"> Edit Task </string>
+    <string name="selectDate"> Task Date </string>
+    <string name="taskTitle"> Task Title </string>
+    <string name="selectDateError"> Please select task date </string>
+    <string name="selectTitleError"> Please enter task title </string>
+    <!--TASK-->
+
+    <!--Profile-->
+    <string name="patientid">Patient ID</string>
+    <string name="patient_name">Patient Name</string>
+    <string name="gender">Gender</string>
+    <string name="maritial_status">Marital Status</string>
+    <string name="phone">Phone</string>
+    <string name="email">Email</string>
+    <string name="address">Address</string>
+    <string name="age">Age</string>
+    <string name="month">Months</string>
+    <string name="years">Years</string>
+    <string name="bloodgroup">Blood Group</string>
+    <string name="weight">Weight</string>
+    <string name="guardian">Guardian Name</string>
+    <string name="barcode">Barcode</string>
+    <string name="qrcode">QRCode</string>
+    <!--Profile-->
+
+    <!--ERRORS MSG-->
+    <string name="noInternetMsg">No Internet Connection Found</string>
+    <string name="apiErrorMsg">Unable to get response from API</string>
+    <string name="invalidPassword">Invalid Username Password </string>
+    <string name="invalidUsername">Invalid Email or User Type</string>
+    <string name="verificationMessage">System Error! You are using unregistered version.</string>
+    <!--ERRORS MSG-->
+
+    <!-- MSG-->
+    <string name="logoutMsg">Are you sure you want to Logout?</string>
+    <string name="deleteMsg">Are you sure you want to Delete?</string>
+    <string name="deleteAppointmentmsg">Are you sure you want to Delete Appointment?</string>
+    <string name="deleteNotificationmsg">Are you sure you want to Delete ?</string>
+    <string name="noData"> No Data Found! </string>
+    <string name="notScheduled">Not Scheduled</string>
+    <string name="ok">Ok</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="blank"> </string>
+    <string name="cancel">Cancel</string>
+    <string name="approve">Approved</string>
+    <string name="approveby">Approved By</string>
+    <string name="pending">Pending</string>
+    <!-- MSG-->
+
+    <!-- Appointment-->
+    <string name="appointmentprefix">APPN</string>
+    <string name="appointmentdetails">Appointment Details</string>
+    <string name="appointmentdate">Appointment Date</string>
+    <string name="appointments">Appointments</string>
+    <string name="appointment_no">Appointment No.</string>
+    <string name="deleteAppointment">Delete Appointment</string>
+    <string name="deleteNotification">Delete Notifications</string>
+    <string name="doctor">Doctor</string>
+    <string name="appointmentpriority">Appointment Priority</string>
+    <string name="shift">Shift</string>
+    <string name="appoint_serial">Appointment S.No.</string>
+    <string name="slot">Slots</string>
+    <string name="priority">Priority</string>
+    <string name="noslot">No Slots Available</string>
+    <string name="specialist">Specialist</string>
+    <string name="live_consultant">Live Consultation (On Video Conference)</string>
+    <string name="checkup">Check Up</string>
+    <string name="message">Message</string>
+    <!-- Appointment-->
+
+    <!-- Download Content-->
+    <string name="shareddate">Shared Date</string>
+    <string name="validdate">Valid Upto</string>
+    <string name="sharedby">Shared By</string>
+
+    <!-- Download Content-->
+
+    <!-- IPD and OPD -->
+    <string name="Title"> Title </string>
+    <string name="createNewTimeline"> Add Timeline </string>
+    <string name="diagnosis">Diagnosis</string>
+    <string name="labinvestigation">Lab Investigation</string>
+    <string name="treatmenthistory">Treatment History</string>
+    <string name="timeline">Timeline</string>
+    <string name="bed_history">Bed History</string>
+    <string name="vitals">Vitals</string>
+    <string name="prev_obs_history">Previous Obstetric History</string>
+    <string name="post_history">Postnatal History</string>
+    <string name="antenatal">Antenatal</string>
+    <string name="antenatalfindings">Antenatal Findings</string>
+    <string name="prescription">Prescription</string>
+    <string name="ipd_prescription">IPD Prescription</string>
+    <string name="opdprefix">OPDP</string>
+    <string name="ipdprefix">IPDP</string>
+    <string name="ipdnoprefix">IPDN</string>
+    <string name="dose">Dose</string>
+    <string name="charge">Charges</string>
+    <string name="chargename">Charge Name</string>
+    <string name="payment">Payment</string>
+    <string name="pay">Pay</string>
+    <string name="payment_type">Payment Type</string>
+    <string name="bill">Bill</string>
+    <string name="prescriptionno">Prescription No</string>
+    <string name="dosage">Dosage</string>
+    <string name="dose_interval">Dose Interval</string>
+    <string name="dose_duration">Dose Duration</string>
+    <string name="chargetype">Charge Type</string>
+    <string name="StandardCharges">Standard Charges</string>
+    <string name="tpaCharges">TPA Charges</string>
+    <string name="tpa">TPA</string>
+    <string name="tpaId">TPA ID</string>
+    <string name="tpaValidity">TPA Validity</string>
+    <string name="totalcharges">Total Charges</string>
+    <string name="grosstotalbalance">Gross Total (Balance Amount)</string>
+    <string name="grosstotal">Gross Total</string>
+    <string name="totalpayments">Total Payment</string>
+    <string name="othercharges">Other Charges</string>
+    <string name="netpayable">Net Payable Amount</string>
+    <string name="netpayablepaid">Net Payable Amount(Paid)</string>
+    <string name="billsummary">Bill Summary</string>
+    <string name="MakePayment">Make Payment</string>
+    <string name="Discharg_date">Discharge Date</string>
+    <string name="dischargd">Discharged</string>
+    <string name="discharg">Discharge</string>
+    <string name="previous_patient">Previous Patient</string>
+    <string name="previous_ipd">Previous IPD</string>
+    <string name="component_issue">Component Issues</string>
+    <string name="Admission_date">Admission  Date</string>
+    <string name="dischargedsummary">Discharged Summary</string>
+    <string name="Tax">Tax</string>
+    <string name="netamount">Net Amount</string>
+    <string name="ChequeNo">Cheque No</string>
+    <string name="result">Result</string>
+    <string name="fromDate">From Date</string>
+    <string name="toDate">To Date</string>
+    <string name="document">Document</string>
+    <string name="discount">Discount</string>
+    <string name="Total">Total</string>
+    <string name="opdno">OPD NO.</string>
+    <string name="ipdno">IPD NO.</string>
+    <string name="Discharged">Discharged</string>
+    <string name="bed">Bed</string>
+    <string name="due_payment">Due Payment</string>
+    <string name="credit_limt">Credit Limit</string>
+    <string name="referenceDoctor">Reference Doctor</string>
+    <string name="consultantDoctor">Consultant Doctor</string>
+    <string name="symptoms">Symptoms</string>
+    <string name="place_delivery">Place of Delivery</string>
+    <string name="pregnancy_duration">Duration of Pregnancy</string>
+    <string name="pregnancy_complication">Complications in Pregnancy or Puerperium</string>
+    <string name="birth_weight">Birth Weight</string>
+    <string name="infant_feeding">Infant Feeding</string>
+    <string name="birth_status">Birth Status</string>
+    <string name="alive_death_date">Alive/Death Date</string>
+    <string name="death_cause">Death Cause</string>
+    <string name="prev_med_history">Previous Medical History</string>
+    <string name="spec_instr">Special Instruction</string>
+    <string name="labour_time">Labour Time</string>
+    <string name="delivery_time">Delivery Time</string>
+    <string name="routine_question">Routine Question</string>
+    <string name="general_remark">General Remark</string>
+    <string name="opd_ipd_no">OPD/IPD No</string>
+    <string name="bleeding">Bleeding</string>
+    <string name="headache">Headache</string>
+    <string name="pain">Pain</string>
+    <string name="constipation">Constipation</string>
+    <string name="vomiting">Vomiting</string>
+    <string name="cough">Cough</string>
+    <string name="vaginal">Vaginal</string>
+    <string name="height">Height</string>
+    <string name="oedema">Oedema</string>
+    <string name="condition">Condition</string>
+    <string name="specialfindingsremark">Special Findings And Remark</string>
+    <string name="pelvicexamination">Pelvic Examination</string>
+    <string name="sp">SP</string>
+    <string name="primary_examine">Primary Examine</string>
+    <string name="antenatal_examine">Antenatal Examine</string>
+    <string name="uter_size">Uter Size</string>
+    <string name="uterus_size">Uterus Size</string>
+    <string name="presentation_position">Presentation Position</string>
+    <string name="presenting_part_brim">Presenting Part To Brim</string>
+    <string name="foeta_heart">Foeta Heart</string>
+    <string name="blood_pressure">Blood Pressure</string>
+    <string name="antenatal_weight">Antenatal weight</string>
+    <string name="antenatal_oedema">Antenatal Oedema</string>
+    <string name="urine">Urine (Sugar)</string>
+    <string name="urine_aaibumen">Urine Aaibumen</string>
+    <string name="nextvisit">Next Visit</string>
+    <string name="IPDPatient">IPD</string>
+    <string name="ChargeCategory">Charge Category</string>
+    <string name="description">Description</string>
+    <string name="ipd_Patient">IPD Patient</string>
+    <!-- IPD and OPD -->
+
+
+    <!-- Pathology, Radiology and Pharmacy -->
+    <string name="pathologyprefix">PATB</string>
+    <string name="pharmacyprefix">PHAB</string>
+    <string name="radiologyprefix">RADB</string>
+    <string name="billno">Bill No </string>
+    <string name="reportdetails">Report Details</string>
+    <string name="billdetails">Bill Details</string>
+    <string name="unit">Unit</string>
+    <string name="admin">Admin</string>
+    <string name="date">Date</string>
+    <string name="findings">Findings</string>
+    <string name="caseid">Case Id</string>
+    <string name="total_tax">Total Tax</string>
+    <string name="balance_amount">Balance Amount</string>
+    <string name="medication">Medication</string>
+    <string name="Overview">Overview</string>
+    <string name="technician">Technician</string>
+    <string name="ottechnician">OT Technician</string>
+    <string name="lab">Lab</string>
+    <string name="inst_date">Instruction Date</string>
+    <string name="Instruction">Instruction</string>
+    <string name="medicinecategory">Medicine Category</string>
+    <string name="consultant">Consultant Register</string>
+    <string name="consultants">Consultant</string>
+    <string name="createdby">Created By</string>
+    <string name="createdfor">Created For</string>
+    <string name="awaited">Awaited</string>
+    <string name="cancelled">Cancelled</string>
+    <string name="finished">Finished</string>
+    <string name="reportingdate">Reporting Date</string>
+    <string name="appliedcharge">Applied Charge</string>
+    <string name="testname">Test Name</string>
+    <string name="shortname">Short Name</string>
+    <string name="quantity">Quantity</string>
+    <string name="value">Value</string>
+    <string name="remark">Remark</string>
+    <string name="reference">Reference</string>
+    <string name="referencerange">Reference Range</string>
+    <string name="samplecollected">Sample Collected</string>
+    <string name="expecteddate">Expected Date</string>
+    <string name="uploaddate">Upload Date</string>
+    <string name="comment">Comment</string>
+    <string name="ChequeDate">Cheque Date</string>
+    <string name="totaldiposit">Total Deposit</string>
+    <string name="totaltax">Total Tax</string>
+    <string name="refundamount">Refund Amount</string>
+    <string name="dueamount">Due Amount</string>
+    <string name="batch">Batch No.</string>
+    <string name="note">Note</string>
+    <string name="paymentmode">Payment Mode</string>
+    <string name="vital_parameter">Vital Parameter</string>
+    <string name="paidamount">Paid Amount</string>
+    <string name="expirydate">Expiry Date</string>
+    <string name="medname">Medicine Name</string>
+    <string name="testparameter">Test Name</string>
+    <string name="medicine">Medicine</string>
+    <string name="invest_date">Investigations Date</string>
+    <string name="invest">Investigations</string>
+    <!-- Pathology, Radiology and Pharmacy -->
+
+
+    <!-- Operation Theatre,Ambulance and Blood Bank -->
+    <string name="Issuedate">Issue Date</string>
+    <string name="bloodissuedetail">Blood Issue Details</string>
+    <string name="componentissuedetail">Component Issue Details</string>
+    <string name="bloodbankprefix">BLBB</string>
+    <string name="component">Component</string>
+    <string name="donor">Donor Name</string>
+    <string name="Operationdate">Operation Date</string>
+    <string name="operationname">Operation Name</string>
+    <string name="drivername">Driver Name</string>
+    <string name="drivercontact">Driver Contact</string>
+    <string name="AmbulanceBill">Ambulance Bill</string>
+    <string name="operationtype">Operation Type</string>
+    <string name="operationcategory">Operation Category</string>
+    <string name="vehiclemodel">Vehicle Model</string>
+    <string name="vehicleno">Vehicle No.</string>
+    <string name="contact">Contact</string>
+    <string name="amount">Amount</string>
+    <string name="bagno">Bag No.</string>
+    <!-- Operation Theatre,Ambulance and Blood Bank -->
+
+
+    <!--OTHERS-->
+    <string name="toDo">To Do List </string>
+    <string name="report">Report</string>
+    <string name="patient">Patient</string>
+    <string name="time">Time</string>
+    <string name="patienttype">Patient Type</string>
+    <string name="view">View</string>
+    <string name="join">Join</string>
+    <string name="status">Status</string>
+    <string name="visit">Visits</string>
+    <string name="operation">Operations</string>
+    <string name="treatment">Treatment at Home</string>
+    <string name="Consultant">Consultant</string>
+    <string name="opdipd">OPD/IPD NO.</string>
+    <string name="name">Patient Name</string>
+    <string name="operation_theatre">Operation Theartre</string>
+    <string name="ot_details">Operation Details</string>
+    <string name="lab_investigation">Lab Investigation</string>
+    <string name="nurse_note">Nurse Note</string>
+    <string name="Name">Name</string>
+    <string name="transaction">Transaction ID</string>
+    <string name="take_photo">Take Photo</string>
+    <string name="choose_from_gallery">Choose From Gallery</string>
+    <string name="submit_success">Submit Successfully</string>
+    <string name="deleteall">Delete All</string>
+    <string name="transactionprefix">TRID</string>
+    <string name="price">Price</string>
+    <string name="bp">BP</string>
+    <string name="download">All Download completed</string>
+    <string name="patientpanelstatus">Patient Panel is Disable</string>
+    <!--OTHERS-->
+
+
+    <!--ABOUT-->
+    <string name="hospitalCode">Hospital Code</string>
+    <string name="version">Version 3.0</string>
+    <string name="username_error">Please enter Username</string>
+    <string name="password_error">Please enter Password</string>
+
+    <!--ABOUT-->
+
+
+</resources>

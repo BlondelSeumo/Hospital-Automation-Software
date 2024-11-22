@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/addTask_dialog_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/textHeading"
+            >
+
+            <ImageView
+                android:id="@+id/addTask_dialog_calenderIcon"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_alignParentStart="true"
+                android:src="@drawable/ic_edit_black"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="10dp"
+                android:tint="@color/white"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="40dp"
+                android:textSize="@dimen/primaryText"
+                android:gravity="start|center"
+                android:layout_toEndOf="@id/addTask_dialog_calenderIcon"
+                android:padding="5dp"
+                android:text="@string/editTask"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                />
+
+            <ImageView
+                android:id="@+id/addTask_dialog_crossIcon"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentEnd="true"
+                android:src="@drawable/ic_close"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:padding="5dp"
+                android:tint="@color/white"
+                />
+
+        </RelativeLayout>
+
+        <EditText
+            android:id="@+id/addTask_dialog_titleET"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="#000000"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:textSize="@dimen/primaryText"
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:hint="@string/taskTitle"
+            android:gravity="start"
+            android:paddingTop="12dp"
+            android:layout_marginTop="15dp"
+            android:minHeight="40dp"
+            android:minLines="5"
+            android:background="@drawable/grey_outline"
+            />
+
+
+        <RelativeLayout
+            android:id="@+id/addTask_dialog_dateBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/grey_outline">
+
+            <TextView
+                android:id="@+id/addTask_dialog_dateTV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/primaryText"
+                android:gravity="start|center"
+                android:padding="5dp"
+                android:text="@string/selectDate"
+                android:textStyle="bold"
+                android:textColor="@color/textHeading"
+                />
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/addTask_dialog_submitBtn"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            android:text="@string/submit"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="@dimen/primaryText"
+            />
+
+    </LinearLayout>
+
+
+</LinearLayout>

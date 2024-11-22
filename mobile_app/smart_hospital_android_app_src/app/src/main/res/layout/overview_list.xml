@@ -1,0 +1,952 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".patient.PatientPathology">
+    <LinearLayout
+        android:id="@+id/data_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible"
+        android:orientation="vertical">
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/limit_exceed"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:padding="5dp"
+            android:gravity="center"
+            android:visibility="gone"
+            android:background="@color/lightpink"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/pink"
+                android:text="Your credit limit has been exceeded! Please make payment to maintain it."/>
+        </LinearLayout>
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:elevation="10dp"
+        android:layout_marginTop="10dp"
+        app:cardCornerRadius="10dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="2"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="@string/caseid"
+                android:textStyle="bold"
+                android:textColor="@color/textHeading"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/caseid"
+                android:layout_width="wrap_content"
+                android:textColor="@color/textHeading"
+                android:layout_marginLeft="10dp"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="2"
+                android:layout_marginTop="2dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="@string/ipdno"
+                    android:textStyle="bold"
+                    android:textColor="@color/textHeading"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:id="@+id/ipdnotv"
+                    android:layout_width="wrap_content"
+                    android:textColor="@color/textHeading"
+                    android:layout_marginLeft="10dp"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="2"
+                android:layout_marginTop="2dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="@string/Admission_date"
+                    android:textStyle="bold"
+                    android:textColor="@color/textHeading"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:id="@+id/admissiondate"
+                    android:layout_width="wrap_content"
+                    android:textColor="@color/textHeading"
+                    android:layout_marginLeft="10dp"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="2"
+                android:layout_marginTop="2dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:textColor="@color/textHeading"
+                    android:text="@string/bed"
+                    android:textStyle="bold"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:id="@+id/bed"
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/textHeading"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <!-- Card view for displaying the -->
+    <!-- Pie chart and details of pie chart -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardViewGraph"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:elevation="10dp"
+        android:layout_marginTop="10dp"
+        app:cardCornerRadius="10dp">
+
+        <!--Linear layout to display pie chart -->
+        <!-- and details of pie chart-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+           android:layout_margin="5dp"
+            android:orientation="horizontal"
+            android:weightSum="2">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <org.eazegraph.lib.charts.PieChart
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/piechart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="5dp"
+                    android:layout_marginLeft="15dp" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/graph_per"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="98.55%"
+                        android:textSize="@dimen/secondaryText"
+                        android:textColor="@color/textHeading"
+                        android:textStyle="bold"
+                        android:layout_marginBottom="5dp"
+                        android:paddingLeft="10dp"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:orientation="vertical"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp"
+                    android:layout_gravity="center_vertical">
+
+                    <!--View to display the yellow color icon-->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Credit Limit"
+                        android:textStyle="bold"
+                        android:textColor="@color/textHeading"
+                        android:paddingLeft="5dp"/>
+                    <TextView
+                        android:id="@+id/creditlimit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textColor="@color/textHeading"
+                        android:textStyle="bold"
+                        android:paddingLeft="10dp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Used Credit Limit"
+                        android:textColor="@color/red"
+                        android:textStyle="bold"
+                        android:paddingLeft="5dp"/>
+                    <TextView
+                        android:id="@+id/usedcredit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textStyle="bold"
+                        android:textColor="@color/red"
+                        android:paddingLeft="10dp"/>
+
+                </LinearLayout>
+
+                <!--Linear layout to display C++-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="5dp">
+
+                    <!--View to display the red color icon-->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Balance Credit Limit"
+                        android:textStyle="bold"
+                        android:textColor="@color/green"
+                        android:paddingLeft="5dp"/>
+                    <TextView
+                        android:id="@+id/balancedcredit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textStyle="bold"
+                        android:textColor="@color/green"
+                        android:paddingLeft="10dp"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:elevation="10dp"
+        android:layout_marginTop="10dp"
+        app:cardCornerRadius="10dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="2"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="IPD PAYMENT/BILLING"
+                android:padding="5dp"
+                android:textStyle="bold"
+                android:textColor="@color/textHeading"
+                android:layout_height="wrap_content"/>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="2"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/totalbillratio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="0.2"
+                    android:gravity="start"
+                    android:text="50%"
+                    android:textColor="@color/textHeading"
+                    android:textSize="@dimen/secondaryText" />
+                <TextView
+                    android:id="@+id/totalbillpayment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="50%"
+                    android:layout_marginEnd="10dp"
+                    android:layout_gravity="end"
+                    android:layout_alignParentEnd="true"
+                    android:layout_weight="0.2"
+                    android:textColor="@color/textHeading"
+                    android:textSize="@dimen/secondaryText" />
+            </RelativeLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="2"
+                android:layout_marginBottom="5dp"
+                android:orientation="horizontal">
+                <ProgressBar
+                    android:id="@+id/progressBar"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:indeterminate="false"
+                    android:layout_weight="1.8"
+                    android:progressTint="@color/hyperLink"
+                    android:layout_marginLeft="5dp"
+                    android:progress="50" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:id="@+id/pharmacy_card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:elevation="10dp"
+        android:layout_marginTop="10dp"
+        app:cardCornerRadius="10dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="2"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="PHARMACY PAYMENT/BILLING"
+                android:padding="5dp"
+                android:textStyle="bold"
+                android:textColor="@color/textHeading"
+                android:layout_height="wrap_content"/>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="2"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/pharmacy_totalbillratio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="50%"
+                    android:gravity="start"
+                    android:layout_weight="0.2"
+                    android:textColor="@color/textHeading"
+                    android:textSize="@dimen/secondaryText" />
+                <TextView
+                    android:id="@+id/pharmacy_totalbillpayment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="50%"
+                    android:layout_marginEnd="10dp"
+                    android:layout_gravity="end"
+                    android:layout_alignParentEnd="true"
+                    android:layout_weight="0.2"
+                    android:textColor="@color/textHeading"
+                    android:textSize="@dimen/secondaryText" />
+            </RelativeLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="2"
+                android:layout_marginBottom="5dp"
+                android:orientation="horizontal">
+                <ProgressBar
+                    android:id="@+id/pharmacy_progressBar"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:indeterminate="false"
+                    android:layout_weight="1.8"
+                    android:progressTint="@color/hyperLink"
+                    android:layout_marginLeft="5dp"
+                    android:progress="50" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:id="@+id/pathology_card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:elevation="10dp"
+        android:layout_marginTop="10dp"
+        app:cardCornerRadius="10dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="2"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="PATHOLOGY PAYMENT/BILLING"
+                android:padding="5dp"
+                android:textStyle="bold"
+                android:textColor="@color/textHeading"
+                android:layout_height="wrap_content"/>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="2"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/pathology_totalbillratio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="50%"
+                    android:gravity="start"
+                    android:layout_weight="0.2"
+                    android:textColor="@color/textHeading"
+                    android:textSize="@dimen/secondaryText" />
+                <TextView
+                    android:id="@+id/pathology_totalbillpayment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="50%"
+                    android:layout_marginEnd="10dp"
+                    android:layout_gravity="end"
+                    android:layout_alignParentEnd="true"
+                    android:layout_weight="0.2"
+                    android:textColor="@color/textHeading"
+                    android:textSize="@dimen/secondaryText" />
+            </RelativeLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="2"
+                android:layout_marginBottom="5dp"
+                android:orientation="horizontal">
+                <ProgressBar
+                    android:id="@+id/pathology_progressBar"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:indeterminate="false"
+                    android:layout_weight="1.8"
+                    android:progressTint="@color/hyperLink"
+                    android:layout_marginLeft="5dp"
+                    android:progress="50" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:id="@+id/radiology_card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:elevation="10dp"
+        android:layout_marginTop="10dp"
+        app:cardCornerRadius="10dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="2"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="RADIOLOGY PAYMENT/BILLING"
+                android:padding="5dp"
+                android:textStyle="bold"
+                android:textColor="@color/textHeading"
+                android:layout_height="wrap_content"/>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="2"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/radiology_totalbillratio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="50%"
+                    android:gravity="start"
+                    android:layout_weight="0.2"
+                    android:textColor="@color/textHeading"
+                    android:textSize="@dimen/secondaryText" />
+                <TextView
+                    android:id="@+id/radiology_totalbillpayment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="50%"
+                    android:layout_marginEnd="10dp"
+                    android:layout_gravity="end"
+                    android:layout_alignParentEnd="true"
+                    android:layout_weight="0.2"
+                    android:textColor="@color/textHeading"
+                    android:textSize="@dimen/secondaryText" />
+            </RelativeLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="2"
+                android:layout_marginBottom="5dp"
+                android:orientation="horizontal">
+                <ProgressBar
+                    android:id="@+id/radiology_progressBar"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:indeterminate="false"
+                    android:layout_weight="1.8"
+                    android:progressTint="@color/hyperLink"
+                    android:layout_marginLeft="5dp"
+                    android:progress="50" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:id="@+id/bloodbank_card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:elevation="10dp"
+        android:layout_marginTop="10dp"
+        app:cardCornerRadius="10dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="2"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="BLOOD BANK PAYMENT/BILLING"
+                android:padding="5dp"
+                android:textStyle="bold"
+                android:textColor="@color/textHeading"
+                android:layout_height="wrap_content"/>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="2"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/bloodbank_totalbillratio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="50%"
+                    android:gravity="start"
+                    android:layout_weight="0.2"
+                    android:textColor="@color/textHeading"
+                    android:textSize="@dimen/secondaryText" />
+                <TextView
+                    android:id="@+id/bloodbank_totalbillpayment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="50%"
+                    android:layout_marginEnd="10dp"
+                    android:layout_gravity="end"
+                    android:layout_alignParentEnd="true"
+                    android:layout_weight="0.2"
+                    android:textColor="@color/textHeading"
+                    android:textSize="@dimen/secondaryText" />
+            </RelativeLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="2"
+                android:layout_marginBottom="5dp"
+                android:orientation="horizontal">
+                <ProgressBar
+                    android:id="@+id/bloodbank_progressBar"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:indeterminate="false"
+                    android:layout_weight="1.8"
+                    android:progressTint="@color/hyperLink"
+                    android:layout_marginLeft="5dp"
+                    android:progress="50" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:id="@+id/ambulance_card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:elevation="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        app:cardCornerRadius="10dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="2"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="AMBULANCE PAYMENT/BILLING"
+                android:padding="5dp"
+                android:textStyle="bold"
+                android:textColor="@color/textHeading"
+                android:layout_height="wrap_content"/>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="2"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/ambulance_totalbillratio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="50%"
+                    android:gravity="start"
+                    android:layout_weight="0.2"
+                    android:textColor="@color/textHeading"
+                    android:textSize="@dimen/secondaryText" />
+                <TextView
+                    android:id="@+id/ambulance_totalbillpayment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="50%"
+                    android:layout_marginEnd="10dp"
+                    android:layout_gravity="end"
+                    android:layout_alignParentEnd="true"
+                    android:layout_weight="0.2"
+                    android:textColor="@color/textHeading"
+                    android:textSize="@dimen/secondaryText" />
+            </RelativeLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="2"
+                android:layout_marginBottom="5dp"
+                android:orientation="horizontal">
+                <ProgressBar
+                    android:id="@+id/ambulance_progressBar"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:indeterminate="false"
+                    android:layout_weight="1.8"
+                    android:progressTint="@color/hyperLink"
+                    android:layout_marginLeft="5dp"
+                    android:progress="50" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="2"
+                android:padding="15dp"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:padding="5dp"
+                        android:src="@drawable/label"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:text="Current Vitals:"
+                        android:textStyle="bold"
+                        android:layout_gravity="center_vertical"
+                        android:textColor="@color/textHeading"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/currentvitals_recyclerview"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingTop="5dp"
+                    android:weightSum="4">
+
+                    <TextView
+                        android:id="@+id/bminame"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.8"
+                        android:layout_height="wrap_content"
+                        android:text="@string/empty"
+                        android:gravity="left"
+                        android:paddingStart="5dp"
+                        android:textColor="@color/textHeading"
+                        android:textSize="@dimen/secondaryText"/>
+
+                    <TextView
+                        android:id="@+id/bmivitalvalue"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="@string/empty"
+                        android:gravity="center"
+                        android:textColor="@color/textHeading"
+                        android:textSize="@dimen/secondaryText"/>
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="2"
+            android:layout_margin="5dp"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:padding="5dp"
+                    android:src="@drawable/label"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="Known Allergies:"
+                    android:textStyle="bold"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="@color/textHeading"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/known_allergies"
+                android:layout_width="wrap_content"
+                android:text=""
+                android:padding="5dp"
+                android:layout_marginLeft="20dp"
+                android:textColor="@color/textHeading"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:weightSum="2"
+                    android:padding="15dp"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <ImageView
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:padding="5dp"
+                            android:src="@drawable/label"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:text="Findings"
+                            android:padding="5dp"
+                            android:textStyle="bold"
+                            android:textColor="@color/textHeading"
+                            android:layout_height="wrap_content"/>
+                    </LinearLayout>
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/findings_recyclerview"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"/>
+
+                </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:weightSum="2"
+                android:layout_margin="5dp"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:padding="5dp"
+                        android:src="@drawable/label"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:text="Symptoms:"
+                        android:textStyle="bold"
+                        android:layout_gravity="center_vertical"
+                        android:textColor="@color/textHeading"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/symptoms"
+                    android:layout_width="wrap_content"
+                    android:text=""
+                    android:padding="5dp"
+                    android:layout_marginLeft="20dp"
+                    android:textColor="@color/textHeading"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:elevation="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                app:cardCornerRadius="10dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:weightSum="2"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:text="CONSULTANT DOCTOR"
+                        android:padding="5dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/textHeading"
+                        android:layout_height="wrap_content"/>
+                    <LinearLayout
+                        android:id="@+id/sym_layout"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/linear_layout"
+                        android:padding="5dp"
+                        android:weightSum="2"
+                        android:orientation="horizontal">
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:orientation="vertical">
+
+                            <de.hdodenhof.circleimageview.CircleImageView
+                                android:id="@+id/doctorimage"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:src="@drawable/default_image"
+                                android:scaleType="centerCrop" />
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/doctorname"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=""
+                            android:layout_marginLeft="10dp"
+                            android:layout_gravity="center"
+                            android:layout_marginRight="5dp"
+                            android:textColor="@color/textHeading"
+                            android:textSize="@dimen/secondaryText"
+                            />
+
+                    </LinearLayout>
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/doctor_recyclerview"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"/>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+    </LinearLayout>
+            <LinearLayout
+                android:id="@+id/nodata_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <ImageView
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:src="@drawable/no_data" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No Data Found !"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="@dimen/primaryText"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+</LinearLayout>

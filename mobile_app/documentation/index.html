@@ -1,0 +1,862 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+            <title>
+                Hospital Mobile App - Documentation
+            </title>
+            <meta content="Smart Hospital Android App Ver. 3.0 - Documentation" name="description">
+                <meta content="QDOCS" name="author">
+                    <meta content="QDOCS" name="copyright">
+                        <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+                            <link href="assets/images/s-favicon.png" rel="shortcut icon" type="image/x-icon">
+                                <!-- Bootstrap 3.3.6 -->
+                                <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+                                    <!-- Font Awesome -->
+                                    <link href="assets/css/font-awesome.min.css" rel="stylesheet"/>
+                                    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet" type="text/css"/>
+                                    <!-- Ionicons -->
+                                    <!-- Theme style -->
+                                    <link href="assets/css/docmain.min.css" rel="stylesheet">
+                                        <link href="assets/css/_all-skins.min.css" rel="stylesheet">
+                                            <link href="assets/css/style.css" rel="stylesheet">
+                                                <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+                                                <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+                                                <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+                                            </link>
+                                        </link>
+                                    </link>
+                                </link>
+                            </link>
+                        </meta>
+                    </meta>
+                </meta>
+            </meta>
+        </meta>
+    </head>
+    <body class="skin-blue fixed" data-spy="scroll" data-target="#scrollspy">
+        <div class="wrapper">
+            <header class="main-header">
+                <a class="logo" href="#" target="_blank">
+                    <span class="logo-lg">
+                        <img alt="Hospital Automation" src="assets/images/logo.png"/>
+                    </span>
+                </a>
+                <nav class="navbar navbar-static-top" role="navigation">
+                    <a class="sidebar-toggle" data-toggle="offcanvas" href="#" role="button">
+                        <span class="sr-only">
+                            Toggle navigation
+                        </span>
+                    </a>
+                    <div class="navbar-custom-menu" style="padding: 10px;">
+                        <a href="#" target="_blank">
+                            <img alt="img" class="" height="30" src="assets/images/qdocs-square-logo.png"/>
+                        </a>
+                    </div>
+                </nav>
+            </header>
+            <aside class="main-sidebar">
+                <div class="sidebar single-page-nav" id="scrollspy">
+                    <ul class="nav sidebar-menu">
+                        <li class="active page-scroll">
+                            <a href="#documenter_cover">
+                                Start
+                            </a>
+                        </li>
+                        <li class="page-scroll">
+                            <a href="#sysreq">
+                                System Requirements
+                            </a>
+                        </li>
+                        <li class="page-scroll">
+                            <a href="#install">
+                                Installation & Configuration
+                            </a>
+                        </li>
+                        <li class="page-scroll">
+                            <a href="#lang">
+                                Languages
+                            </a>
+                        </li>
+						<li class="page-scroll">
+							<a href="#changelog">
+								Changelog
+							</a>
+						</li>
+                        <li class="page-scroll">
+                            <a href="#freesupp">
+                                Free Help & Support
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </aside>
+            <div class="content-wrapper">
+                <div class="content body">
+                    <section id="documenter_cover">
+                        <h1 class="page-header">
+                            Hospital Automation Mobile App
+                        </h1>
+                        <h5 style="margin-top: 0px;font-style: italic;">
+                            Get always connected to your Smart Hospital.
+                        </h5>
+                        <!--<h2 QDOCS</h2>-->
+                        <h5>
+                            <span style="font-size:14px;">
+                                By
+                            </span>
+                            <br>
+                                <a href="#" target="_blank">
+                                    <img alt="img" class="" src="assets/images/qdocs.png" width="150"/>
+                                </a>
+                            </br>
+                        </h5>
+                        <hr>                            
+                            <hr>
+                                <p>
+                                    
+                                    <p>
+                                        If you are unable to find your answer here in our documentation. If you are unable to find it anywhere, then please go our Support section and open a new Support Ticket with all the details we need. Please be sure to include your site URL as well. Thank you, we hope you enjoy using
+                                        <b>
+                                            Smart Hospital Android App
+                                        </b>
+                                        !
+                                    </p>
+                                    <a class="btn btn-primary button-primary button-primary2" href="#">
+                                        Help & Support
+                                    </a>
+                                </p>
+                            </hr>
+                        </hr>
+                    </section>
+                    <!-- ============================================================= -->
+                    <section id="sysreq">
+                        <h1 class="page-header">
+                            System Requirements
+                        </h1>
+                        <hr>
+                            <p>
+                                Using
+                                <b>
+                                    Smart Hospital Android App
+                                </b>
+                                , you must have running
+                                <strong>
+                                    Smart Hospital version 5.0
+                                </strong>
+                                on your online server with domain or subdomain or ip address.
+                                <strong>
+                                    Smart Hospital Android App
+                                </strong>
+                                fetches
+                                <strong>
+                                    Smart Hospital
+                                </strong>
+                                data through
+                                <strong>
+                                    Smart Hospital Api
+                                </strong>
+                                so before using app you must install
+                                <strong>
+                                    Smart Hospital Api
+                                </strong>
+                                on your same hosting server at any place with domain or subdomain or ip address.
+   
+   Your web server must be running
+                                <b>
+                                    PHP 7.0 or higher
+                                </b>
+                                and
+                                <b>
+                                    Mysql 5.1 or higher
+                                </b>
+                                . We have tested it with Windows, Mac and Linux but for optimum performance we will recommend to use
+                                <b>
+                                    Linux with Apache webserver
+                                </b>
+                                . Below are a list of items you should ensure your host can comply with.
+                            </p>
+                            <ul>
+                                <li>
+                                    Smart Hospital version 5.0
+                                </li>
+                                <li>
+                                    PHP 8.1 to higher
+                                </li>
+                                <li>
+                                    MYSQL 5.5 or higher (MYSQL 8 supported)
+                                </li>
+                                <li>
+                                    mod_rewrite Apache
+                                </li>
+                                <li>
+                                    HTTP_AUTHORIZATION HTTP Authorization header enabled
+                                </li>
+                            </ul>
+                        </hr>
+                    
+                       
+                        <hr>
+                            <p><b>
+                                    Smart Hospital Android App has been built and tested for following specifications -
+                                </b>
+								</p>
+                            <ul>
+                                <li>
+                                    Android Version 9 - 14
+                                </li>
+                                <li>
+                                    Android API level 34
+                                </li>
+                                <li>
+                                    Android Studio Hedgehog | 2023.1.1
+                                </li>
+                                <li>
+                                    Gradle Version 8.2
+                                </li>
+                                <li>
+                                    Gradle JDK Version 1.8
+                                </li>
+                            </ul>
+                        </hr>
+                    </section>
+                    <!--end Requirements-->
+					
+					
+					
+					
+                    <!-- ============================================================= -->
+                    <!--Installation-->
+                    <section id="install">
+                        <h1 class="page-header">
+                            Smart Hospital Android App Installation & Configuration
+                        </h1>
+                        <hr>
+                            <p>
+                                <strong>
+                                    Smart Hospital Android App can be install and configure in following 4 steps -
+                                </strong>
+                                <p>
+                                </p>
+                                <h4>
+                                    Step 1 - Smart Hospital version 5.0 up and running
+                                </h4>
+                                <p>
+                                    Initially your
+                                    <strong>
+                                        Smart Hospital version 5.0
+                                    </strong>
+                                    should be up and running and must be
+                                    <strong>
+                                        registered with your Envato Market Purchase Code
+                                    </strong>
+                                    . There should be atleast one patient available for login through mobile app. If you have yet not installed Smart Hospital then check Smart Hospital documentation in Smart Hospital downloaded package. Here in this documentation we assume Smart Hospital version 5.0 is installed at
+                                    <strong>
+                                        base_url https://yourdomain.com/
+                                    </strong>
+                                </p>
+                                <p>
+                                    <img alt="img" class="img-responsive" src="assets/images/install1.png"/>
+                                </p>
+                                <h4>
+                                    Step 2 - Installing Smart Hospital Api
+                                </h4>
+                                <p>
+                                    <strong>
+                                        Smart Hospital Api
+                                    </strong>
+                                    is built on
+                                    <strong>
+                                        PHP Codeigniter
+                                    </strong>
+                                    . Its
+                                    <strong>
+                                        HTTP
+                                    </strong>
+                                    based api which sends and receives data in
+                                    <strong>
+                                        JSON
+                                    </strong>
+                                    format.
+                                    <strong>
+                                        Smart Hospital Api
+                                    </strong>
+                                    is a middleware which provides communication between
+                                    <strong>
+                                        Smart Hospital Android App
+                                    </strong>
+                                    and
+                                    <strong>
+                                        Smart Hospital
+                                    </strong>
+                                    .
+                                    <strong>
+                                        Smart Hospital Android App
+                                    </strong>
+                                    cannot directly interact with your
+                                    <strong>
+                                        Smart Hospital
+                                    </strong>
+                                    so it require
+                                    <strong>
+                                        Smart Hospital Api
+                                    </strong>
+                                    which fetches
+                                    <strong>
+                                        Smart Hospital
+                                    </strong>
+                                    data and send to
+                                    <strong>
+                                        Smart Hospital Android App
+                                    </strong>
+                                    .
+                                </p>
+                                <p>
+                                    In your
+                                    <strong>
+                                        Smart Hospital Android App
+                                    </strong>
+                                    downloaded package from codecanyon, you can find folder
+                                    <strong>
+                                        smart_hospital_api_src
+                                    </strong>
+                                    which contains
+                                    <strong>
+                                        Smart Hospital Api
+                                    </strong>
+                                    code files. To install
+                                    <strong>
+                                        Smart Hospital Api
+                                    </strong>
+                                    on your server first create a folder with name
+                                    <strong>
+                                        api
+                                    </strong>
+                                    under your
+                                </p>
+                            </p>
+                        </hr>
+                    </section>
+Smart Hospital
+installation folder on your server. Now just copy all files under
+<strong>
+    smart_hospital_api_src
+</strong>
+folder and paste in your Smart Hospital
+<strong>
+    api
+</strong>
+folder. Now further we need to edit two configuration files.
+<p>
+    <img alt="img" class="img-responsive" src="assets/images/install2.png"/>
+</p>
+<p>
+    1. Enter your
+    <strong>
+        Smart Hospital Api url
+    </strong>
+    in
+    <strong>
+        \application\config\config.php
+    </strong>
+    file
+    <strong>
+        base_url
+    </strong>
+    . So
+    <strong>
+        Smart Hospital Android App
+    </strong>
+    can fetch data from
+    <strong>
+        Smart Hospital Api
+    </strong>
+    .
+</p>
+<p>
+    <img alt="img" class="img-responsive" src="assets/images/install3.png"/>
+</p>
+<p>
+    2. Enter your
+    <strong>
+        Smart Hospital version 5.0 database details
+    </strong>
+    in
+    <strong>
+        \application\config\database.php
+    </strong>
+    file for
+    <strong>
+        hostname, username, password, database
+    </strong>
+    . So
+    <strong>
+        Smart Hospital Api
+    </strong>
+    can fetch data from
+    <strong>
+        Smart Hospital
+    </strong>
+    .
+</p>
+<p>
+    <img alt="img" class="img-responsive" src="assets/images/install4.png"/>
+</p>
+<p>
+    At this point we have installed and configured
+    <strong>
+        Smart Hospital Api
+    </strong>
+    .
+</p>
+<h4>
+    Step 3 - Smart Hospital version 5.0 configuration
+</h4>
+<p>
+    In
+    <strong>
+        Smart Hospital
+    </strong>
+    login to
+    <strong>
+        superadmin
+    </strong>
+    and go to
+    <strong>
+        System Settings > General Setting
+    </strong>
+    here in
+    <strong>
+        Mobile App Api URL
+    </strong>
+    enter
+    <strong>
+        Smart Hospital Api url
+    </strong>
+    . If you want to make changes in
+    <strong>
+        Smart Hospital Android App
+    </strong>
+    colors then enter your desired color code in
+    <strong>
+        Mobile App Primary Color Code
+    </strong>
+    and
+    <strong>
+        Mobile App Secondary Color Code
+    </strong>
+    then click on
+    <strong>
+        Save
+    </strong>
+    button.
+</p>
+<p>
+    <strong>
+        Register Your Android App
+    </strong>
+    using Smart Hospital Android App you must first register your Smart Hospital Android App envato purchase code otherwise in android app you will get error message of "You are using unregister version". To register your Smart Hospital Android App just click on
+    <b>
+        Register Your Android App
+    </b>
+    button and follow the instructions. After clicking on
+    <b>
+        Save
+    </b>
+    button once logout and then relogin.
+</p>
+<p>
+    <img alt="img" class="img-responsive" src="assets/images/register_your_android_app.png"/>
+</p>
+<p>
+    After registering your Smart Hospital Android App envato purchase code,
+    <b>
+        Register Your Android App
+    </b>
+    button will disappear that means Smart Hospital Android App envato purchase code has been registered now. You can register your Smart Hospital Android App regular licence envato purchase code only once with your Smart Hospital base URL further if you want to change your base URL then please contact to support.
+</p>
+<p>
+    <img alt="img" class="img-responsive" src="assets/images/install5.png"/>
+</p>
+<p>
+    To change
+    <strong>
+        Smart Hospital Android App logo
+    </strong>
+    click on
+    <strong>
+        Edit App Logo
+    </strong>
+    button to upload your logo.
+</p>
+<p>
+    <img alt="img" class="img-responsive" src="assets/images/install6.png"/>
+</p>
+<p>
+    At this point we have configured
+    <strong>
+        Smart Hospital
+    </strong>
+    also and ready to login to our
+    <strong>
+        Smart Hospital Android App
+    </strong>
+    .
+</p>
+<h4>
+    Step 4 - Smart Hospital Android App Installation and Login
+</h4>
+<p>
+    <strong>
+        Smart Hospital Android App
+    </strong>
+    comes with ready to use, you just have to install
+    <strong>
+        Smart Hospital Android App apk
+    </strong>
+    file in your android mobile or tab and then enter your
+    <strong>
+        Smart Hospital version 5.0 base_url
+    </strong>
+    and it will start fetching data then you can login to patient username / password.
+    <strong>
+        Smart Hospital Android App apk
+    </strong>
+    file is present in your downloaded package under
+    <strong>
+        smart_hospital_android_app_apk
+    </strong>
+    folder as
+    <strong>
+        smart-hospital-android-app-3.0.apk
+    </strong>
+    file. Just copy this file in your android mobile or tab and install it.
+    <strong>
+        Smart Hospital Android App
+    </strong>
+    supports
+    <strong>
+        Android 4.4+ versions
+    </strong>
+    .
+</p>
+<p>
+    <img alt="img" class="img-responsive" src="assets/images/install7.png"/>
+</p>
+<p>
+    <img alt="img" class="img-responsive" src="assets/images/install11.jpeg"/>
+</p>
+<p>
+    In
+    <strong>
+        Smart Hospital Android App
+    </strong>
+    at login screen there is a link for
+    <strong>
+        Privacy Policy
+    </strong>
+    page which pointing to your
+    <strong>
+        Smart Hospital base_url/privacy-policy.html
+    </strong>
+    . So to make
+    <strong>
+        Privacy Policy
+    </strong>
+    link working you must upload a
+    <strong>
+        privacy-policy.html
+    </strong>
+    file at your
+    <strong>
+        Smart Hospital
+    </strong>
+    installation folder and enter your privacy policy details in this html file.
+    <strong>
+        Privacy Policy
+    </strong>
+    is mandatory if you are uploading your
+    <strong>
+        Smart Hospital Android App
+    </strong>
+    on
+    <strong>
+        Google Play Store
+    </strong>
+    .
+</p>
+<p>
+    <img alt="img" class="img-responsive" src="assets/images/install8.jpeg"/>
+</p>
+<h4>
+    Smart Hospital Android App distribution to Patient
+</h4>
+<p>
+    You can distribute
+    <strong>
+        Smart Hospital Android App
+    </strong>
+    to your patient users by two ways -
+</p>
+<p>
+    1. Just upload
+    <strong>
+        smart-hospital-android-app-3.0.apk
+    </strong>
+    file on your
+    <strong>
+        Smart Hospital
+    </strong>
+    hosting directory and give direct link to your
+    <strong>
+        patient users
+    </strong>
+    . It will no require to make any changes or rebuild of smart-hospital-android-app-3.0.apk file. 
+    
+</p>
+
+<p>
+	2. Rebuild <strong>Smart Hospital Android App</strong> with your <strong>Hospital name, google-services.json</strong> and <strong>package name</strong> then upload it on <strong>Google Paly Store</strong> and tell your patient users to download <strong>your Hospital named android app</strong> from <strong>Google Play Store</strong>. But this will require to make changes in <strong>Smart Hospital Android App</strong> source code and <strong>rebuild</strong> it on <strong>Android Studio</strong>. For this you can hire any Android developer or you can hire us but it will be chargeable.      
+</p>
+
+<p>
+	To change default <strong>Google firebase project id</strong> open to file <strong>\application\libraries\Pushnotification.php</strong> in <strong>Smart Hospital version 5.0</strong> and change value of $fcumrl, it should be your project id in firebase console. You should also replace your <strong>firebase_notification_key.json</strong> (downloaded from your firebase console) with existing file present at <strong>\application\third_party\firebase_notification_key.json</strong>.
+</p> 
+<p>
+    <img alt="img" class="img-responsive" src="assets/images/install9.png"/>
+</p>
+<p>
+    To change default
+    <strong>
+        app name Smart Hospital
+    </strong>
+    to your own Hospital name open
+    <strong>
+        \smart_hospital_android_app_src\app\src\main\res\values\strings.xml
+    </strong>
+    file and change
+    <strong>
+        app_name
+    </strong>
+    value.
+</p>
+<p>
+    <img alt="img" class="img-responsive" src="assets/images/install10.png"/>
+</p>
+<p>
+    Great! You have successfully installed, configured  and distributed Smart Hospital Android App now.
+</p>
+<p>
+    Note: In Smart Hospital Andrdid App after login to patient if you are getting
+    <strong>
+        No Internet Connection Found
+    </strong>
+    message then there is chance that your hosting server is not complaint to host standard http based api application and HTTP_AUTHORIZATION HTTP Authorization header is not enabled in your hosting (leading hosting providers like hostgator, godaddy are complaint to for standard http api hosting) in this case please contact to your hosting provider to fix this issue or contact to our support by open
+    <a href="#" target="_blank">
+        Support Ticket
+    </a>
+    .
+</p>
+<p>
+    If you need help for installation and configuration, do not hesitate to open
+    <a href="#" target="_blank">
+        Support Ticket
+    </a>
+</p>
+<!--languages-->
+<section id="lang">
+    <h1 class="page-header">
+        Smart Hospital Android App supports multiple languages
+    </h1>
+    <p>
+        <strong>
+            Smart Hospital Android App
+        </strong>
+        default language is
+        <strong>
+            English
+        </strong>
+        which language string file is
+        <strong>
+            \smart_hospital_android_app_src\app\src\main\res\values\strings.xml
+        </strong>
+        . Apart from
+        <strong>
+            English
+        </strong>
+        there is one
+        <strong>
+            Hindi
+        </strong>
+        language file is also supplied which language string file is
+        <strong>
+            \smart_hospital_android_app_src\app\src\main\res\values-hi\strings.xml
+        </strong>
+    </p>
+    <p>
+        <img alt="img" class="img-responsive" src="assets/images/lang1.png"/>
+    </p>
+    <p>
+        To add your own language in
+        <strong>
+            Smart Hospital Android App
+        </strong>
+        e.g. we want to add
+        <strong>
+            French
+        </strong>
+        language then create a
+        <strong>
+            values-fr
+        </strong>
+        (values-your language iso 2 digit short code can be check at Smart Hospital admin panel System Settings > languages > Code) folder under
+        <strong>
+            \smart_hospital_android_app_src\app\src\main\res
+        </strong>
+        folder. Then copy
+        <strong>
+            English
+        </strong>
+        language string file
+        <strong>
+            \smart_hospital_android_app_src\app\src\main\res\values\strings.xml
+        </strong>
+        in
+        <strong>
+            values-fr
+        </strong>
+        folder. Now change English values to your French language strings in
+        <strong>
+            \smart_hospital_android_app_src\app\src\main\res\values-fr\strings.xml
+        </strong>
+        file. That’s it. Now when you change or make active
+        <strong>
+            French
+        </strong>
+        language from
+        <strong>
+            Smart Hospital admin panel
+        </strong>
+        it will be change in
+        <strong>
+            Smart Hospital Android App
+        </strong>
+        also.
+    </p>
+    <p>
+        <img alt="img" class="img-responsive" src="assets/images/lang2.png"/>
+    </p>
+</section>
+<!--end languages-->
+
+<!--Changelog-->
+<section id="changelog">
+	<h1 class="page-header">Smart Hospital Android App Changelog for version 3.0</h1><hr>   
+	<p>Released Date: 05 October, 2024</p>		
+	<p><strong>Features Enhancement</strong></p>
+        <ul>
+			<li>Added support for Smart Hospital version 5.0</li>
+        </ul>
+                
+</section>
+<!--end Changelog-->
+
+<!--Admin Panel-->
+<section id="freesupp">
+    <h1 class="page-header">
+        Free Help & Support
+    </h1>
+    <hr>
+        <p>
+            All of our items come with free support, and we have a
+            <strong>
+                Dedicated
+                        Support Ticket System
+            </strong>
+            to handle your requests. Support is limited to questions regarding the code features, bugs or problems with the application. We are not able to provide support for code customizations or third-party plugins. If you need help with anything other than minor customizations of your code then you should enlist the help of a developer or our customization service.
+        </p>
+        <i>
+            Please mention your
+            <b>
+                Codecanyon Purchase Code
+            </b>
+            with your support ticket.
+        </i>
+        <p>
+            <a class="button button-primary button-hero" href="#">
+                Go to Support Portal
+            </a>
+        </p>
+    </hr>
+</section>
+<!--end Admin Panel-->
+<!--Student Information-->
+<section>
+    <h3>
+        Thank you once again for the purchase!
+    </h3>
+    <hr>
+        <p>
+            Once again, thank you to trust on Smart Hospital Android App. We will be glad to help you if you have any questions relating to this application. No guarantees, but we will do best to assist.
+        </p>
+        <h5 class="alert">
+            <i>
+                If you like this Smart Hospital Android App, please do not forget to rate us 5 Star at Codecanyon
+            </i>
+        </h5>
+        <h5 style="color:#1e8cbe;">
+            <b>
+                QDOCS Team
+            </b>
+        </h5>
+        <div style="padding-top:70px;">
+        </div>
+    </hr>
+</section>
+<!--end Student Information-->
+<!-- /.content -->
+<!-- /.content-wrapper -->
+
+<!-- ./wrapper -->
+<a class="scrool-top" href="javascript:void(0)">
+    <i class="fa fa-angle-up">
+    </i>
+</a>
+<!-- jQuery 2.2.3 -->
+<script src="assets/js/jquery-2.2.3.min.js">
+</script>
+<!-- Bootstrap 3.3.6 -->
+<script src="assets/js/bootstrap.min.js">
+</script>
+<script src="assets/js/jquery.easing.min.js">
+</script>
+<script src="assets/js/custom.js">
+</script>
+<!-- FastClick -->
+<script src="assets/js/fastclick.min.js">
+</script>
+<!-- AdminLTE App -->
+<script src="assets/js/app.min.js">
+</script>
+<!-- SlimScroll 1.3.0 -->
+<script src="assets/js/jquery.slimscroll.min.js">
+</script>
+<script src="assets/js/docs.js">
+</script>
+<script src="assets/js/jquery.singlePageNav.min.js">
+</script></div> 
+</div> 
+</div>
+<footer class="main-footer">
+    <strong>
+        Copyright © 2024
+        <a href="#" target="_blank">
+            QDOCS
+        </a>
+    </strong>
+</footer>
+ </body>
+</html>

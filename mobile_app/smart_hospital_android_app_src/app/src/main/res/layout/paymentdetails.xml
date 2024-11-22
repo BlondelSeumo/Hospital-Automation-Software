@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:id="@+id/addappoint_dialog_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <ImageView
+            android:id="@+id/addTask_dialog_calenderIcon"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentStart="true"
+            android:src="@drawable/payment"
+            android:tint="@color/white"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            />
+
+        <TextView
+            android:id="@+id/headertext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/addTask_dialog_calenderIcon"
+            android:gravity="start|center"
+            android:minHeight="40dp"
+            android:padding="5dp"
+            android:text="@string/payment"
+            android:textColor="@color/white"
+            android:textSize="@dimen/primaryText"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/dialog_crossIcon"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/ic_close"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:padding="5dp"
+            android:tint="@color/white" />
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical"
+        android:baselineAligned="false"
+        android:layout_marginEnd="5dp"
+        android:layout_marginStart="5dp">
+
+        <LinearLayout
+            android:id="@+id/adapter_patient_pharmacy_detailLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="5">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="wrap_content"
+                android:text="@string/date"
+                android:textStyle="bold"
+                android:layout_marginStart="5dp"
+                android:textColor="@color/textHeading"
+                android:textSize="@dimen/secondaryText"/>
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="@string/paymentmode"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textColor="@color/textHeading"
+                android:textSize="@dimen/secondaryText"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="@string/payment_type"
+                android:gravity="center"
+                android:textColor="@color/textHeading"
+                android:textSize="@dimen/secondaryText"
+                android:textStyle="bold"
+                android:layout_marginEnd="5dp"
+                />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="@string/paidamount"
+                android:gravity="center"
+                android:textColor="@color/textHeading"
+                android:textSize="@dimen/secondaryText"
+                android:textStyle="bold"
+                android:layout_marginEnd="5dp"
+                />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.4dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/seperatorline"
+            />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="right"
+            android:orientation="horizontal"
+            android:background="@color/tabtext"
+            android:padding="5dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="@string/Total"
+                android:layout_marginEnd="10dp"
+                android:textColor="@color/textHeading"
+                android:textSize="@dimen/secondaryText" />
+
+
+            <TextView
+                android:id="@+id/total_payment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:layout_marginStart="10dp"
+                android:text=""
+                android:textColor="@color/textHeading"
+                android:textSize="@dimen/secondaryText" />
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
